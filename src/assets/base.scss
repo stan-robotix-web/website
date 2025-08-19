@@ -1,12 +1,12 @@
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
 
-$text: #212B42;
+$text: #212b42;
 $background: #d5dfed;
-$primary: #B1D2EF;
-$secondary: #6A829F;
+$primary: #b1d2ef;
+$secondary: #6a829f;
 $accent: #cd2d3a;
 
 $blue: #184fb4;
@@ -31,15 +31,16 @@ html {
 }
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   color: $text;
   background: $background;
   transition: all 0.5s ease;
   line-height: 1.6;
-  font-family:
-  Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 15px;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -48,7 +49,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
-  height:3px;
+  height: 3px;
 }
 
 /* Track */
