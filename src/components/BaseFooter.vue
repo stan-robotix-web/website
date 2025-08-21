@@ -82,19 +82,19 @@ export default {
       <!-- TODO-Content : add links -->
       <div class="contact">
         <div class="icons">
-          <a href="" id="insta" target="”_blank”"
+          <a href="https://www.instagram.com/stan.robotix.6622/" id="insta" target="”_blank”"
             ><span><i class="fa-brands fa-instagram"></i> </span
           ></a>
-          <a href="" id="linke" target="”_blank”"
+          <a href="https://ca.linkedin.com/company/stanrobotix" id="linke" target="”_blank”"
             ><span><i class="fa-brands fa-linkedin-in"></i> </span
           ></a>
-          <a href="" id="fb" target="”_blank”"
+          <a href="https://www.facebook.com/stanrobotix6622" id="fb" target="”_blank”"
             ><span><i class="fa-brands fa-facebook-f"></i> </span
           ></a>
-          <a href="" id="linke" target="”_blank”"
+          <a href="https://github.com/PragmaCube/Stan-Robotix-Source" id="linke" target="”_blank”"
             ><span><i class="fa-brands fa-github"></i> </span
           ></a>
-          <a href="" id="mail" target="”_blank”"
+          <a href="mailto:stanrobotix@gmail.com" id="mail"
             ><span><i class="fa-regular fa-envelope"></i> </span
           ></a>
         </div>

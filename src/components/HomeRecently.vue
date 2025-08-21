@@ -11,34 +11,31 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
       <!-- TODO-Content: Complete with events and possibly links to learn more if needed ; if not, use NewsCardUnclick -->
       <NewsCardClickable link="/robots/">
         <template v-slot:img>
-          <img src="../components/images/robot.jpg" />
+          <img src="../components/images/robot-2025.jpg" /> <!-- image a changer -->
         </template>
         <template v-slot:tag>Event</template>
-        <template v-slot:date>March 3, 2024</template>
+        <template v-slot:date>March 6, 2025</template>
         <template v-slot:title
-          >Festival de Robotique 2024 - FIRST Crescendo</template
+          >Festival de Robotique 2025 - FIRST Reefscape</template
         >
       </NewsCardClickable>
 
       <NewsCardUnclick>
         <template v-slot:img>
-          <img class="img" src="../components/images/DSF4460.jpg" />
+          <img class="img" src="../components/images/GalaRobot-2025.jpg" />
         </template>
-        <template v-slot:tag>Project Update</template>
-        <template v-slot:date>August 21, 2024</template>
-        <template v-slot:title>Creating a whole new website</template>
+        <template v-slot:tag>Event</template>
+        <template v-slot:date>June 18, 2025</template>
+        <template v-slot:title>Our robot at the Gala</template>
         <template v-slot:desc
-          >Our students recreated a website, turning it into a modern,
-          user-friendly platform. This project provided a practical learning
-          experience in web development and design while creating a valuable
-          marketing tool for Stan Robotix.</template
+          >Our students decorated and drove the team's robot the our school gala. The idea behind this was to show everyone how cool robotics is and how far you can go making robots.</template
         >
       </NewsCardUnclick>
 
       <NewsCardClickable link="https://lesserpuariens.com/">
         <template v-slot:img>
           <img
-            src="https://cdn.discordapp.com/attachments/1104424782335840297/1317099038872703017/IMG_20241212_181451231.jpg?ex=67695111&is=6767ff91&hm=414657f8a5f72d07c9e5491940d78987d38d929e78f7a3ab87d19180907c1daa&"
+            src="../components/images/Serpuarien-2025.jpg"
           />
         </template>
         <template v-slot:tag>Outreach</template>
