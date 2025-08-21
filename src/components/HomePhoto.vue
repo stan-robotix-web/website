@@ -23,7 +23,7 @@ section {
 
 main {
   // TODO-Content: put a team photo
-  background-image: url("../components/images/group.jpg");
+  background-image: url("../components/images/TeamPic-2025.jpg");
 
   min-height: 90vh;
   width: 90vw;
