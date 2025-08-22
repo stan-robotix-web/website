@@ -16,7 +16,7 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
         A donation could help us with our future projects and competitions,
         especially with the cost of materials, tools and travel expenses.
       </p>
-      <a class="wishlist" href="../../pdf/Wishlist.pdf" download>
+      <a class="wishlist" href="/pdf/Wishlist.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />See our
         Wishlist PDF
@@ -42,12 +42,12 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
 
     <h3>Documents</h3>
     <section class="docs">
-      <a class="wishlist" href="../../pdf/Sponsorship_file.pdf" download>
+      <a class="wishlist" href="/pdf/Sponsorship_file.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />
         Sponsorship File
       </a>
-      <a class="wishlist" href="../../pdf/FundingRequestLetter.pdf" download>
+      <a class="wishlist" href="/pdf/FundingRequestLetter.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />Funding
         Request Letter
