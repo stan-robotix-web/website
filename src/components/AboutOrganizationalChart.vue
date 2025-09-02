@@ -2,7 +2,6 @@
 
 <template>
     <!-- image de l'organisation de StanRobotix?-->
-     <h3>Team members</h3>
      <ul>
         <li class = "Stuph">
             <p>Stéphanie</p>
@@ -30,11 +29,11 @@
         </li>
         <li class = "Raphael">
             <p>Raphaël</p>
-            <h5 class="description">Mentor Dev Team</h5>
+            <h5 class="description">Coach</h5>
         </li>
         <li class = "Teo">
             <p>Téo</p>
-            <h5 class="description">Mentor Construction</h5>
+            <h5 class="description">Coach</h5>
         </li>
      </ul>
 </template>
@@ -44,10 +43,6 @@
 
 $nombre_colonne: 5;
 $nombre_rangee: 2;
-
-h3 {
-    text-align: center;
-}
 
 ul {
     display: grid;
