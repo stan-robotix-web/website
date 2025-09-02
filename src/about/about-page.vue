@@ -12,7 +12,6 @@ import AboutOrganizationalChart from '../../src/components/AboutOrganizationalCh
             <h1>About <span>Us</span></h1>
             <h3>Team members</h3>
             <AboutOrganizationalChart></AboutOrganizationalChart>
-            <h3>Subteams</h3>
             <AboutSubteams></AboutSubteams>
         </main>
     <BaseFooter></BaseFooter>
