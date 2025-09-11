@@ -9,9 +9,9 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
 
     <div class="grid">
       <!-- TODO-Content: Complete with events and possibly links to learn more if needed ; if not, use NewsCardUnclick -->
-      <NewsCardClickable link="/robots/">
+      <NewsCardClickable link="/wip/">
         <template v-slot:img>
-          <img src="../components/images/robot-2025.jpg" /> <!-- image a changer -->
+          <img src="../components/images/robot-2025.jpg" />
         </template>
         <template v-slot:tag>Event</template>
         <template v-slot:date>March 6, 2025</template>
@@ -32,7 +32,7 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
         >
       </NewsCardUnclick>
 
-      <NewsCardClickable link="https://lesserpuariens.com/">
+      <NewsCardClickable link="https://lesserpuariens.com/" target="_blank">
         <template v-slot:img>
           <img
             src="../components/images/Serpuarien-2025.jpg"

@@ -5,13 +5,17 @@ const props = defineProps({
   link: {
     type: String,
     required: true
+  },
+  target: {
+    type: String,
+    required: false
   }
 });
 </script>
 
 <template>
   <div>
-    <a :href="link" class="img"><i class="fa-solid fa-location-arrow"></i>
+    <a :href="link" :target="target" rel="noopener noreferrer" class="img"><i class="fa-solid fa-location-arrow"></i>
       <slot name="img"></slot>
     </a>
     <div>
