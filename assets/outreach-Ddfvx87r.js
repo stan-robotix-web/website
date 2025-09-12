@@ -1,1 +1,0 @@
-import{_ as t,o,c,e as a,F as p,B as r,g as _,p as n,d,a as s,i as u}from"./BaseFooter-DEZ8K9YB.js";const l=e=>(n("data-v-39b1261b"),e=e(),d(),e),h=l(()=>s("main",null,[s("h1",null,"Outreach")],-1)),m={__name:"outreach-page",setup(e){return(B,b)=>(o(),c(p,null,[a(r),h,a(_)],64))}},i=t(m,[["__scopeId","data-v-39b1261b"]]);u(i).mount("#app");

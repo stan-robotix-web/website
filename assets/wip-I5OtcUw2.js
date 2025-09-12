@@ -1,0 +1,1 @@
+import{_ as o,c as r,o as n,d as s,a as e,B as t,g as c,F as p,h as l}from"./BaseFooter-D8ruPCKl.js";const _={__name:"work-in-progress",setup(u){return(m,a)=>(n(),r(p,null,[s(t),a[0]||(a[0]=e("main",null,[e("h1",null,"Work in Progress"),e("h3",null,"Check back soon for updates!")],-1)),s(c)],64))}},d=o(_,[["__scopeId","data-v-f901bedd"]]);l(d).mount("#app");
