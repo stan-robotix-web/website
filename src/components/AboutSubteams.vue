@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="title">Subteams</h2>
             <div class="programming subteam">
                 <div class="subteamName">
-                    <h3>Programming&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>Programming<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="SND subteam">
                 <div class="subteamName">
-                    <h3>SnD&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>SnD<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="design subteam">
                 <div class="subteamName">
-                    <h3>Design&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>Design<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="construction subteam">
                 <div class="subteamName">
-                    <h3>Construction&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>Construction<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="marketing subteam">
                 <div class="subteamName">
-                    <h3>Marketing&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>Marketing<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="medias subteam">
                 <div class="subteamName">
-                    <h3>Medias&nbsp;<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                    <h3>Medias<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
                 </div>
                 <div class="subteamExplanation">
                     <ul>
@@ -193,6 +193,7 @@ $grid-rows: 3;
 
         .arrow {
             color: $accent;
+            margin-left: 5px;
         }
     }
 
