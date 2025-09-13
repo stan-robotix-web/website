@@ -32,7 +32,7 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
         >
       </NewsCardUnclick>
 
-      <NewsCardClickable link="https://lesserpuariens.com/" target="_blank">
+      <NewsCardClickable link="https://lesserpuariens.com/" target="Serpuarien">
         <template v-slot:img>
           <img
             src="../components/images/Serpuarien-2025.jpg"

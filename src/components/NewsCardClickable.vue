@@ -28,7 +28,7 @@ const props = defineProps({
       <h3>
         <slot name="title"></slot>
       </h3>
-      <a :href="link">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+      <a :href="link" target="_blank" rel="noopener noreferrer">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
   </div>
 </template>
