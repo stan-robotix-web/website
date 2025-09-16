@@ -154,10 +154,18 @@ $circle-radius : 15px;
 
   .logo {
     grid-area: logo;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
   }
 
   .img {
     grid-area: img;
+    display: flex;
+    align-items: center;
+  }
+
+  .img > * {
     border-radius: 10px;
   }
 }
@@ -171,7 +179,13 @@ $circle-radius : 15px;
     "button button";
 
   .logo {
-    padding-left: 10px;
+    grid-area: logo;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
+  .img {
+    grid-area: img;
   }
 }
 
