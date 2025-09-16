@@ -1,43 +1,11 @@
 <script setup>
 import BaseHeader from '../../src/components/BaseHeader.vue'
 import BaseFooter from '../../src/components/BaseFooter.vue'
+import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll('.card');
-
-  cards.forEach(card => {
-    const main = card.querySelector('.main');
-    const dots = card.querySelector('.dots');
-    const button = card.querySelector('a');
-
-    if (main.scrollHeight <= 200) {
-      // Si la hauteur est inférieure ou égale à 180px, cacher le bouton et les trois petits points
-      button.style.display = 'none';
-      dots.style.display = 'none';
-    }
-
-    function toggleText() {
-      if (main.style.maxHeight === 'none') {
-        // Rétrécit le texte et affiche les trois petits points
-        main.style.maxHeight = '180px';
-        dots.style.display = 'inline';
-        button.innerHTML = 'Read more <i class="fa-solid fa-chevron-down"></i>';
-      } else {
-        // Étend le texte et cache les trois petits points
-        main.style.maxHeight = 'none';
-        dots.style.display = 'none';
-        button.innerHTML = 'Read less <i class="fa-solid fa-chevron-up"></i>';
-      }
-    }
-
-    dots.addEventListener('click', toggleText);
-    button.addEventListener('click', toggleText);
-  });
-});</script>
 <template>
 
-  <BaseHeader />
+  <BaseHeader/>
 
   <main>
     <h1>Robots</h1>
@@ -67,99 +35,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <div class="timeline">
       <i class="fa-solid fa-chevron-up arrow"></i>
-
-      <div class="card left" id="reefscape">
-        <img src="./../components/images/fd_frc_reefscape_logo_patch_full color_rgb.png" class="logo" width="100%">
-        <img src="../components/images/robot.jpg" class="img" width="100%">
-        <div class="main">
-          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
-            elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
-            mollis
-            curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
-            bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
-            mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
-            <br>
-            Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
-            condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
-            magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
-            nostra
-            inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
-            dictumst sociosqu pretium non.
-          </p>
-          <span class="dots">...</span>
-        </div>
-        <a>Read more <i class="fa-solid fa-chevron-down"></i></a>
-      </div>
-      <div class="line">
-        <div class="circle"></div>
-        <div class="link left"></div>
-      </div>
-      <div class="date right">
-        <h2> Reefscape - 2024</h2>
-      </div>
-
-      <div class="date">
-        <h2>Crescendo - 2024</h2>
-      </div>
-      <div class="line">
-        <div class="circle"></div>
-        <div class="link"></div>
-      </div>
-      <div class="card" id="crescendo">
-        <img
-          src="https://www.chiefdelphi.com/uploads/default/original/3X/e/3/e368a7acb70c869b89fee0382bfe312c595bb781.svg"
-          class="logo" width="100%">
-        <img src="../components/images/robot.jpg" class="img" width="100%">
-        <div class="main">
-          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
-            elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
-            mollis
-            curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
-            bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
-            mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
-            <br>
-            Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
-            condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
-            magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
-            nostra
-            inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
-            dictumst sociosqu pretium non.
-          </p>
-          <span class="dots">...</span>
-        </div>
-        <a>Read more <i class="fa-solid fa-chevron-down"></i></a>
-      </div>
-
-      <div class="card left">
-        <img
-          src="https://www.chiefdelphi.com/uploads/default/original/3X/e/3/e368a7acb70c869b89fee0382bfe312c595bb781.svg"
-          class="logo" width="100%">
-        <img src="../components/images/robot.jpg" class="img" width="100%">
-        <div class="main">
-          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
-            elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
-            mollis
-            curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
-            bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
-            mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
-            <br>
-            Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
-            condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
-            magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
-            nostra
-            inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
-            dictumst sociosqu pretium non.
-          </p>
-          <span class="dots">...</span>
-        </div>
-        <a>Read more <i class="fa-solid fa-chevron-down"></i></a>
-      </div>
-      <div class="line">
-        <div class="circle"></div>
-        <div class="link left"></div>
-      </div>
-      <div class="date right">
-      </div>
+      <RobotCardComponent side="left" year="reefscape">
+        <template v-slot:logo>
+          <img src="./../components/images/fd_frc_reefscape_logo_patch_full color_rgb.png" width="100%">
+        </template>
+        <template v-slot:img>
+          <img src="../components/images/robot.jpg" width="100%">
+        </template>
+        <template v-slot:desc>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
+          elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
+          mollis
+          curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
+          bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
+          mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
+          <br>
+          Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
+          condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
+          magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
+          nostra
+          inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
+          dictumst sociosqu pretium non.
+        </template>
+        <template v-slot:date>Reefscape - 2025</template>
+      </RobotCardComponent>
+      <RobotCardComponent year="crescendo">
+        <template v-slot:logo>
+          <img src="https://www.chiefdelphi.com/uploads/default/original/3X/e/3/e368a7acb70c869b89fee0382bfe312c595bb781.svg" width="100%">
+        </template>
+        <template v-slot:img>
+          <img src="../components/images/robot.jpg" width="100%">
+        </template>
+        <template v-slot:desc>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
+          elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
+          mollis
+          curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
+          bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
+          mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
+          <br>
+          Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
+          condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
+          magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
+          nostra
+          inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
+          dictumst sociosqu pretium non.
+        </template>
+        <template v-slot:date>Crescendo - 2024</template>
+      </RobotCardComponent>
+      <RobotCardComponent side="left" year="chargedup">
+        <template v-slot:logo>
+          <img src="https://www.chiefdelphi.com/uploads/default/original/3X/e/3/e368a7acb70c869b89fee0382bfe312c595bb781.svg" width="100%">
+        </template>
+        <template v-slot:img>
+          <img src="../components/images/robot.jpg" width="100%">
+        </template>
+        <template v-slot:desc>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
+          elementum phasellus vitae. Tempus dis mauris integer nostra hac. Metus porta lacus ultricies fermentum
+          mollis
+          curabitur pharetra risus. Nam nullam class imperdiet iaculis felis taciti fringilla porta. Congue taciti leo
+          bibendum feugiat tristique. Nam dictumst id ligula at scelerisque ex euismod. Imperdiet nisl natoque varius
+          mauris quisque. Consequat lacinia nascetur tellus dignissim nibh, dolor neque eleifend.
+          <br>
+          Et dis nostra maximus suscipit cursus viverra quisque. Cursus malesuada elementum euismod consequat
+          condimentum pellentesque vulputate. Curabitur leo praesent amet maecenas, rhoncus facilisi adipiscing. Magna
+          magnis donec egestas dui erat vitae fames dui. Faucibus integer enim faucibus; sem et nisl! Augue felis
+          nostra
+          inceptos; curae ultrices accumsan. Sed finibus faucibus vitae vulputate accumsan ad. Blandit neque ipsum
+          dictumst sociosqu pretium non.
+        </template>
+        <template v-slot:date>Charged Up - 2023</template>
+      </RobotCardComponent>
     </div>
   </main>
   <BaseFooter />
@@ -192,96 +139,9 @@ nav {
   }
 }
 
-.card {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 3fr max-content max-content;
-  grid-template-areas:
-    "logo img"
-    "text text"
-    "button button";
-
-
-  width: 500px;
-  margin: 0px calc($line-distance + $circle-radius/2 + 6px);
-  padding: 20px;
-  border-radius: 15px;
-
-  a {
-    font-weight: 400;
-    grid-area: button;
-    margin-top: 10px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-
-    i {
-      color: $accent;
-      transition: all 0.5s ease-out;
-    }
-  }
-
-  a:hover {
-    color: $accent;
-    font-weight: 500;
-  }
-
-  .main {
-    grid-area: text;
-    max-height: 180px;
-    overflow: hidden;
-    position: relative;
-
-    p {
-      text-align: justify;
-    }
-
-    .dots {
-      padding-left: 10px;
-      font-weight: 600;
-      position: absolute;
-      bottom: 0;
-      left: 35%;
-      width: 65%;
-      height: 20px;
-      z-index: 1;
-      cursor: pointer;
-      transition: all 1.5s ease;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
-
-  .logo {
-    grid-area: logo;
-  }
-
-  .img {
-    grid-area: img;
-    border-radius: 10px;
-  }
-}
-
-.card.left {
-  justify-self: right;
-
-  grid-template-columns: 3fr 2fr;
-  grid-template-areas:
-    "img logo"
-    "text text"
-    "button button";
-
-  .logo {
-    padding-left: 10px;
-  }
-}
-
 .timeline {
   margin: 20px;
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 4px 1fr;
 
   .arrow {
     position: absolute;
@@ -290,58 +150,6 @@ nav {
     width: min-content;
     color: $accent;
     transform: translateX(-50%) translateY(-10px);
-  }
-
-
-  .date {
-    position: relative;
-
-    h2 {
-      position: absolute;
-      top: 50%;
-      right: 30px;
-      font-size: 38px;
-      margin: 0;
-
-      transform: translateY(-38%);
-    }
-
-    &.right {
-      h2 {
-        left:30px;
-      }
-    }
-  }
-
-  .line {
-    position: relative;
-    background: $accent;
-    width: 4px;
-    height: 100%;
-
-    .circle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: $circle-radius;
-      height: $circle-radius;
-      border-radius: 50%;
-      background: linear-gradient($accent, $orange);
-      transform: translate(-50%, -50%);
-    }
-
-    .link {
-      position: absolute;
-      top: 50%;
-      left: calc(50% + $circle-radius/2 + 3px);
-      width: $line-distance;
-      border-top: 5px dotted $accent;
-      transform: translateY(-50%);
-    }
-
-    .link.left {
-      left: calc(50% - $line-distance - $circle-radius/2 - 3px);
-    }
   }
 }
 
