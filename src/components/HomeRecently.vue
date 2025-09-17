@@ -11,38 +11,36 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
       <!-- TODO-Content: Complete with events and possibly links to learn more if needed ; if not, use NewsCardUnclick -->
       <NewsCardClickable link="/wip/">
         <template v-slot:img>
-          <img src="../components/images/robot-2025.jpg" />
+          <img src="../components/images/robot-2025.jpg"/>
         </template>
         <template v-slot:tag>Event</template>
         <template v-slot:date>March 6, 2025</template>
-        <template v-slot:title
-          >Festival de Robotique 2025 - FIRST Reefscape</template
-        >
+        <template v-slot:title>
+          Festival de Robotique 2025 - FIRST Reefscape
+        </template>
       </NewsCardClickable>
 
       <NewsCardUnclick>
         <template v-slot:img>
-          <img class="img" src="../components/images/GalaRobot-2025.jpg" />
+          <img class="img" src="../components/images/GalaRobot-2025.jpg"/>
         </template>
         <template v-slot:tag>Event</template>
         <template v-slot:date>June 18, 2025</template>
         <template v-slot:title>Our robot at the Gala</template>
-        <template v-slot:desc
-          >Our students decorated and drove the team's robot the our school gala. The idea behind this was to show everyone how cool robotics is and how far you can go making robots.</template
-        >
+        <template v-slot:desc>
+          Our students decorated and drove the team's robot the our school gala. The idea behind this was to show everyone how cool robotics is and how far you can go making robots.
+        </template>
       </NewsCardUnclick>
 
       <NewsCardClickable link="https://lesserpuariens.com/" target="Serpuarien">
         <template v-slot:img>
-          <img
-            src="../components/images/Serpuarien-2025.jpg"
-          />
+          <img src="../components/images/Serpuarien-2025.jpg"/>
         </template>
         <template v-slot:tag>Outreach</template>
         <template v-slot:date>Fall 2024</template>
-        <template v-slot:title
-          >Serpuarien Initiative in College Stanislas</template
-        >
+        <template v-slot:title>
+          Serpuarien Initiative in College Stanislas
+        </template>
       </NewsCardClickable>
     </div>
   </main>
