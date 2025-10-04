@@ -118,7 +118,7 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           <img src="../components/images/Competition_logos/2022_RAPID REACT/Vertical/Full Color/RAPID_REACT_Logo_Vertical_RGB_FullColor.png" min-width="224px" width="100%">
         </template>
         <template v-slot:img>
-          <!-- <img src="../components/images/Robot_images/2022_robot.jpg" width="100%"> -->
+          <img src="../components/images/Robot_images/2022_robot.jpg" width="100%">
         </template>
         <template v-slot:desc>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Sed leo nascetur integer facilisis accumsan aliquet
