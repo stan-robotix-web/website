@@ -56,7 +56,7 @@ export default {
               <a :class="{ active: isActive('/history/') }" href="#">
                 <li>History</li>
               </a>
-              <a :class="{ active: isActive('/join/') }" href="#">
+              <a :class="{ active: isActive('/join/') }" href="/join/">
                 <li>Join</li>
               </a>
             </ul>
