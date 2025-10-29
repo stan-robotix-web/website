@@ -2,69 +2,69 @@
 
 <template>
     <!-- image de l'organisation de StanRobotix?-->
-     <h2>Team Captains</h2>
-     <ul class = "category">
-        <li class = "Nina member" >
+    <h2 id="captains">Team Captains</h2>
+    <div class="category">
+        <div class="Nina member">
             <div>
                 <h4>Nina</h4>
             </div>
             <h5 class="description">Team Captain</h5>
-        </li>
-        <li class = "Timothee member">
+        </div>
+        <div class="Timothee member">
             <div>
                 <h4>Timothée</h4>
             </div>
             <h5 class="description">Dev Team Captain</h5>
-        </li>
-     </ul>
-     <h2>Team Members</h2>
-     <ul  class = "category">
-        <li class = "Maya member">
+        </div>
+    </div>
+    <h2 id="members">Team Members</h2>
+    <div class="category">
+        <div class="Maya member">
             <div>
                 <h4>Maya</h4>
             </div>
             <h5 class="description">Construction Team</h5>
-        </li>
-        <li class = "Alban member">
+        </div>
+        <div class="Alban member">
             <div>
                 <h4>Alban</h4>
             </div>
             <h5 class="description">Dev Team</h5>
-        </li>
-        <li class = "Nayl member">
+        </div>
+        <div class="Nayl member">
             <div>
                 <h4>Nayl</h4>
             </div>
-            <h5 class = "description">Dev Team</h5>
-        </li>
-        <li class = "Katherine member">
+            <h5 class="description">Dev Team</h5>
+        </div>
+        <div class="Katherine member">
             <div>
                 <h4>Katherine</h4>
             </div>
-            <h5 class = "description">Dev Team</h5>
-        </li>
-        <li class = "RaphaelA member">
+            <h5 class="description">Dev Team</h5>
+        </div>
+        <div class="Raphael member">
             <div>
                 <h4>Raphaël</h4>
             </div>
-            <h5 class = "description">Dev Team</h5>
-        </li>
-     </ul>
-     <h2>Team Mentors</h2>
-     <ul class = "category">
-        <li class = "Raphael member">
+            <h5 class="description">Dev Team</h5>
+        </div>
+    </div>
+    <h2 id="mentors">Team Mentors</h2>
+    <div class="category">
+        <div class="Raphael member">
             <div>
                 <h4>Raphaël</h4>
             </div>
             <h5 class="description">Dev Team Mentor</h5>
-        </li>
-        <li class = "Teo member">
+        </div>
+        <div class="Teo member">
             <div>
                 <h4>Téo</h4>
             </div>
             <h5 class="description">Construction Mentor</h5>
-        </li>
-     </ul>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -82,19 +82,19 @@ h2 {
     margin: 15px auto;
 
     border-bottom: 4px solid $blue;
-  }
+}
 
-ul {
+.category {
     display: grid;
-    height: calc($nombre_rangee * 250px);
+    height: 500px;
     padding: 0 10px;
-    grid-template-columns: repeat($nombre_colonne, 1fr);
-    grid-template-rows: repeat($nombre_rangee, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 15px;
     justify-items: stretch;
 }
 
-li {
+.member {
     display: flex;
     background-color: $primary;
     text-align: center;
@@ -104,18 +104,24 @@ li {
     height: 75%;
     width: 15%;
     min-width: 175px;
-    h4, h5 {
+
+    background-position-y: 120%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h4,
+    h5 {
         margin: 0;
         height: 6%;
         color: white;
-
     }
+
     div {
         border-radius: 10px 10px 0px 0px;
         padding: 1px 5px;
         background: #6a829f;
-        
-        h4{
+
+        h4 {
 
             background: linear-gradient(#cd2d3a, #e35730);
             width: min-content;
@@ -123,10 +129,10 @@ li {
             padding: 0 12px;
             margin: auto;
             border-radius: 8px;
-
         }
     }
-    h5{
+
+    h5 {
         border-radius: 0px 0px 10px 10px;
         padding: 4px 1px;
         background: #6a829f;
@@ -134,59 +140,38 @@ li {
     }
 }
 
-.category{
+.category {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.image {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .Nina {
-    @extend .image;
-    background-image: url("images/Subteams_images/DesignTeam_Picture.jpg");
-    // grid-row: 1;i
-    // grid-column: 1;
+    background-image: url("images/TeamMembers_images/Nina_Picture.jpg");
 }
 
 .Timothee {
-    @extend .image;
-    background-image: url("");
-    // grid-row: 1;
-    // grid-column: 2;
+    background-image: url("images/TeamMembers_images/Timothee_Picture.jpg");
 }
 
 .Maya {
-    @extend .image;
-    background-image: url("");
-    // grid-row: 1;
-    // grid-column: 3;
+    background-image: url("images/TeamMembers_images/Maya_Picture.jpg");
 }
 
 .Alban {
-    @extend .image;
-    background-image: url("");
-    // grid-row: 1;
-    // grid-column: 4;
+    background-image: url("images/TeamMembers_images/Alban_Picture.jpg");
 }
 
 .Nayl {
-    @extend .image;
     background-image: url("");
-    // grid-row: 1;
-    // grid-column: 5;
 }
 
 .Katherine {
-    @extend .image;
-    background-image: url("");
-    // grid-row: 2;
-    // grid-column: 1;
+    background-image: url("images/TeamMembers_images/Katherine_Picture.jpg");
 }
 
+.Raphael {
+    background-image: url("");
+}
 </style>
