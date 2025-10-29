@@ -5,13 +5,17 @@ const props = defineProps({
   link: {
     type: String,
     required: true
+  },
+  target: {
+    type: String,
+    required: false
   }
 });
 </script>
 
 <template>
   <div>
-    <a :href="link" class="img"><i class="fa-solid fa-location-arrow"></i>
+    <a :href="link" :target="target" rel="noopener noreferrer" class="img"><i class="fa-solid fa-location-arrow"></i>
       <slot name="img"></slot>
     </a>
     <div>
@@ -24,7 +28,7 @@ const props = defineProps({
       <h3>
         <slot name="title"></slot>
       </h3>
-      <a :href="link">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+      <a :href="link" :target="target" rel="noopener noreferrer">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
   </div>
 </template>

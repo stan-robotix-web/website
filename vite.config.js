@@ -1,18 +1,10 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
-import copy from "rollup-plugin-copy";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    copy({
-      targets: [
-        { src: "pdf/*", dest: "dist/pdf" }
-      ]
-    })
-  ],
+  plugins: [vue()],
   build: {
     rollupOptions: {
       input: {
@@ -20,6 +12,7 @@ export default defineConfig({
         outreach: resolve(__dirname, "outreach/index.html"),
         robots: resolve(__dirname, "robots/index.html"),
         about: resolve(__dirname, "about/index.html"),
+        join: resolve(__dirname, "join/index.html"),
         wip: resolve(__dirname, "wip/index.html"),
         sponsors: resolve(__dirname, "sponsors/index.html"),
       },

@@ -7,10 +7,10 @@ import BaseNav from './BaseNav.vue'
     <a href="/"><img alt="logo" class="logo" src="../components/icons/Nombrotix.svg" height="100px"/></a>
     
     <div class="icons">
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=""><i class="fa-regular fa-envelope"></i></a>
-      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/stan.robotix.6622/" target="”_blank”"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/stanrobotix6622" target="”_blank”"><i class="fa-brands fa-facebook"></i></a>
+      <a href="mailto:stanrobotix@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://ca.linkedin.com/company/stanrobotix" target="”_blank”"><i class="fa-brands fa-linkedin"></i></a>
     </div>
     <BaseNav/>
   </header>
