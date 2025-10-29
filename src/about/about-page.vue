@@ -12,7 +12,7 @@ import AboutOrganizationalChart from '../../src/components/AboutOrganizationalCh
             <h1>About <span>Us</span></h1>
             <h3>Team members</h3>
             <AboutOrganizationalChart></AboutOrganizationalChart>
-            <AboutSubteams></AboutSubteams>
+            <a id="subteams"><AboutSubteams></AboutSubteams></a>
         </main>
     <BaseFooter></BaseFooter>
 </template>

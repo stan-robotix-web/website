@@ -10,7 +10,22 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
   <main>
     <h2>Become a part of the Team</h2>
     <h3>Are you a <a href="#student">student</a> or an <a href="#adult">adult</a> looking to join?</h3>
-    <div class="member band" id="student">
+    <div class="member band" id="about">
+      <h3><a><span>What's </span>Robotix ?</a>
+      </h3>
+      <p>Stan Robotix is organized into several <a href="/about/#subteams"><span>subteams</span></a>, each with its own captain and members,  
+even though a member can obviously be part of multiple <a href="/about/#subteams"><span>subteams</span></a> at the same time!  
+We work on a regular schedule within Collège Stanislas in Montreal.  
+Here is the typical weekly schedule, depending on the subteam you're in: <br>  
+<div>Build Team:</div>  <li>Thursday and Friday from 5:30 PM to 7:30 PM.</li>  
+<div>Media Team:</div>  <li>Friday from 5:30 PM to 7:30 PM.</li>  
+<div>Marketing Team:</div>  <li>Friday from 5:30 PM to 7:30 PM.</li>  
+<div>Finance Team:</div>  <li>Thursday from 5:30 PM to 7:30 PM.</li>  
+<div>Programming Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li>  
+<div>Design Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li>
+      </p>
+       
+    </div><div class="member band" id="student">
       <h3><a href="https://monportail.stanislas.qc.ca/Pednet/login.asp" target="COBA">Join <span>as a</span> student</a>
       </h3>
       <p>The project is open to all those who are interested, no prerequisites! You can come visit us at any time so
@@ -83,6 +98,20 @@ h3 {
     text-align: justify;
     font-size: large;
     margin: 15px auto;
+  }
+  li {
+    text-align: justify;
+    font-size: large;
+    margin: 5px auto;
+    margin-left: 3%;
+  }
+  div {
+    font-weight: bold;
+    text-align: justify;
+    font-size: large;
+  }
+  a span {
+    color: $blue;
   }
 }
 </style>
