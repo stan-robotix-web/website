@@ -25,4 +25,7 @@ template {
     color: $text;
 }
 
+h1 {
+    font-size: min(13vw, 80px);
+}
 </style>
