@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <template>
     <main>
         <div class="subteamsContainer">
-            <h2 class="title">Team Members</h2>
+            <h2 class="title">Subteams</h2>
             <div class="programming subteam">
                 <div class="subteamName">
                     <h3>Programming<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
@@ -133,6 +133,7 @@ $grid-rows: 3;
 .title {
     justify-self: center;
     grid-area: title;
+    
 
     font-weight: 600;
     font-size: 300%;

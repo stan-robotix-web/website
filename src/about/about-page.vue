@@ -11,20 +11,15 @@ import AboutExplanatoryText from '../../src/components/AboutExplanatoryText.vue'
     <BaseHeader></BaseHeader>
         <main>
             <h1>About <span>Us</span></h1>
-            <h3>Team members</h3>
-            <AboutExplanatoryText></AboutExplanatoryText>
-            <AboutOrganizationalChart></AboutOrganizationalChart>
-            <a id="subteams"><AboutSubteams></AboutSubteams></a>
+            <AboutExplanatoryText id="explanatory-text"></AboutExplanatoryText>
+            <AboutOrganizationalChart id="organizational-chart"></AboutOrganizationalChart>
+            <AboutSubteams id="subteams"></AboutSubteams>
         </main>
     <BaseFooter></BaseFooter>
 </template>
 
 <style scoped lang="scss">
 @import "../assets/base.scss";
-
-main {
-    font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
-}
 
 template {
     color: $text;
