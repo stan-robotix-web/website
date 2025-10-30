@@ -2,40 +2,69 @@
 
 <template>
     <!-- image de l'organisation de StanRobotix?-->
-     <ul>
-        <li class = "Stuph">
-            <p>Stéphanie</p>
+    <h2 id="captains">Team Captains</h2>
+    <div class="category">
+        <div class="Nina member">
+            <div>
+                <h4>Nina</h4>
+            </div>
             <h5 class="description">Team Captain</h5>
-        </li>
-        <li class = "Micha">
-            <p>Micha</p>
-            <h5 class="description">Captain Dev Team</h5>
-        </li>
-        <li class = "Zach">
-            <p>Zachary</p>
-            <h5 class="description">Construction Captain</h5>
-        </li>
-        <li class = "Ines">
-            <p>Inès</p>
-            <h5 class="description">Design Captain</h5>
-        </li>
-        <li class = "Sara">
-            <p>Sara</p>
-            <h5 class = "description">Security Captain</h5>
-        </li>
-        <li class = "Emma">
-            <p>Emma</p>
-            <h5 class = "description">Medias Captain</h5>
-        </li>
-        <li class = "Raphael">
-            <p>Raphaël</p>
-            <h5 class="description">Coach</h5>
-        </li>
-        <li class = "Teo">
-            <p>Téo</p>
-            <h5 class="description">Coach</h5>
-        </li>
-     </ul>
+        </div>
+        <div class="Timothee member">
+            <div>
+                <h4>Timothée</h4>
+            </div>
+            <h5 class="description">Dev Team Captain</h5>
+        </div>
+    </div>
+    <h2 id="members">Team Members</h2>
+    <div class="category">
+        <div class="Maya member">
+            <div>
+                <h4>Maya</h4>
+            </div>
+            <h5 class="description">Construction Team</h5>
+        </div>
+        <div class="Alban member">
+            <div>
+                <h4>Alban</h4>
+            </div>
+            <h5 class="description">Dev Team</h5>
+        </div>
+        <div class="Nayl member">
+            <div>
+                <h4>Nayl</h4>
+            </div>
+            <h5 class="description">Dev Team</h5>
+        </div>
+        <div class="Katherine member">
+            <div>
+                <h4>Katherine</h4>
+            </div>
+            <h5 class="description">Dev Team</h5>
+        </div>
+        <div class="Raphael member">
+            <div>
+                <h4>Raphaël</h4>
+            </div>
+            <h5 class="description">Dev Team</h5>
+        </div>
+    </div>
+    <h2 id="mentors">Team Mentors</h2>
+    <div class="category">
+        <div class="Raphael member">
+            <div>
+                <h4>Raphaël</h4>
+            </div>
+            <h5 class="description">Dev Team Mentor</h5>
+        </div>
+        <div class="Teo member">
+            <div>
+                <h4>Téo</h4>
+            </div>
+            <h5 class="description">Construction Mentor</h5>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -44,75 +73,105 @@
 $nombre_colonne: 5;
 $nombre_rangee: 2;
 
-ul {
+h2 {
+    font-weight: 600;
+    font-size: 300%;
+    line-height: 125%;
+    text-align: center;
+    width: max-content;
+    margin: 15px auto;
+
+    border-bottom: 4px solid $blue;
+}
+
+.category {
     display: grid;
-    height: calc($nombre_rangee * 400px);
-    padding: 0 40px;
-    grid-template-columns: repeat($nombre_colonne, 1fr);
-    grid-template-rows: repeat($nombre_rangee, 1fr);
+    height: 500px;
+    padding: 0 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 15px;
     justify-items: stretch;
 }
 
-li {
+.member {
     display: flex;
     background-color: $primary;
     text-align: center;
     border-radius: 10px;
     flex-direction: column;
     align-content: stretch;
-    p, h5 {
+    height: 75%;
+    width: 15%;
+    min-width: 175px;
+
+    background-position-y: 120%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h4,
+    h5 {
         margin: 0;
-        height: 8%;
+        height: 6%;
+        color: white;
+    }
+
+    div {
+        border-radius: 10px 10px 0px 0px;
+        padding: 1px 5px;
+        background: #6a829f;
+
+        h4 {
+
+            background: linear-gradient(#cd2d3a, #e35730);
+            width: min-content;
+            height: 108%;
+            padding: 0 12px;
+            margin: auto;
+            border-radius: 8px;
+        }
+    }
+
+    h5 {
+        border-radius: 0px 0px 10px 10px;
+        padding: 4px 1px;
+        background: #6a829f;
+        text-transform: uppercase;
     }
 }
 
-.image {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Stuph {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Stéphanie_Picture.jpg");
-    // grid-row: 1;
-    // grid-column: 1;
+.Nina {
+    background-image: url("images/TeamMembers_images/Nina_Picture.jpg");
 }
 
-.Ines {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Ines_Picture.jpg");
-    // grid-row: 1;
-    // grid-column: 2;
+.Timothee {
+    background-image: url("images/TeamMembers_images/Timothee_Picture.jpg");
 }
 
-.Zach {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Zachary_Picture.jpg");
-    // grid-row: 1;
-    // grid-column: 3;
+.Maya {
+    background-image: url("images/TeamMembers_images/Maya_Picture.jpg");
 }
 
-.Micha {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Micha_Picture.jpg");
-    // grid-row: 1;
-    // grid-column: 4;
+.Alban {
+    background-image: url("images/TeamMembers_images/Alban_Picture.jpg");
 }
 
-.Sara {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Sara_Picture.jpg");
-    // grid-row: 1;
-    // grid-column: 5;
+.Nayl {
+    background-image: url("");
 }
 
-.Emma {
-    @extend .image;
-    background-image: url("images/TeamMembers_images/Emma_Picture.jpg");
-    // grid-row: 2;
-    // grid-column: 1;
+.Katherine {
+    background-image: url("images/TeamMembers_images/Katherine_Picture.jpg");
 }
 
+.Raphael {
+    background-image: url("");
+}
 </style>
