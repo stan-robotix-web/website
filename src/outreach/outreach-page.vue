@@ -22,7 +22,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
         <template v-slot:title>Festival de Robotique 2025 - FIRST Reefscape</template>
         <template v-slot:desc>
           We participated in the Festival de Robotique 2025 where we presented our robot for the FIRST Robotics Competition.
-          This event allowed us to showcase our hard work and dedication to robotics while engaging with the community and inspiring future generations of roboticists.
+          This event allowed us to showcase our hard work and dedication to robotics while engaging with the community.
         </template>
       </ProjectCard><ProjectCard>
         <template v-slot:img>
