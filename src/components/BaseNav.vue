@@ -39,19 +39,19 @@ export default {
       <li>
         <p>Team <i class="fa-solid fa-caret-down"></i></p>
         <ul>
-          <a :class="{ active: isActive('/about/') }" href="/wip/">
+          <a :class="{ active: isActive('/about/') }" href="/about/">
             <li>About</li>
           </a>
           <a :class="{ active: isActive('/history/') }" href="/wip/">
             <li>History</li>
           </a>
-          <a :class="{ active: isActive('/join/') }" href="/wip/">
+          <a :class="{ active: isActive('/join/') }" href="/join/">
             <li>Join</li>
           </a>
         </ul>
       </li>
       <li><a :class="{ active: isActive('/robots/') }" href="/wip/">Robots</a></li>
-      <li><a :class="{ active: isActive('/outreach/') }" href="/wip/">Outreach</a></li>
+      <li><a :class="{ active: isActive('/outreach/') }" href="/outreach/">Outreach</a></li>
       <li><a :class="{ active: isActive('/sponsors/') }" href="/sponsors/">Sponsors</a></li>
     </ul>
   </nav>
