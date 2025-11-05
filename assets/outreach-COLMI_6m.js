@@ -1,1 +1,0 @@
-import{_ as s,c as r,o,d as a,a as t,B as c,g as n,F as p,h as _}from"./BaseFooter-D8ruPCKl.js";const u={__name:"outreach-page",setup(m){return(d,e)=>(o(),r(p,null,[a(c),e[0]||(e[0]=t("main",null,[t("h1",null,"Outreach")],-1)),a(n)],64))}},l=s(u,[["__scopeId","data-v-39b1261b"]]);_(l).mount("#app");
