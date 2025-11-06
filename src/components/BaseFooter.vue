@@ -53,7 +53,7 @@ export default {
               <a :class="{ active: isActive('/about/') }" href="/about/">
                 <li>About</li>
               </a>
-              <a :class="{ active: isActive('/history/') }" href="#">
+              <a :class="{ active: isActive('/history/') }" href="/history/">
                 <li>History</li>
               </a>
               <a :class="{ active: isActive('/join/') }" href="/join/">

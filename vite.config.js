@@ -13,6 +13,7 @@ export default defineConfig({
         robots: resolve(__dirname, "robots/index.html"),
         about: resolve(__dirname, "about/index.html"),
         join: resolve(__dirname, "join/index.html"),
+        history: resolve(__dirname, "history/index.html"),
         wip: resolve(__dirname, "wip/index.html"),
         sponsors: resolve(__dirname, "sponsors/index.html"),
       },
