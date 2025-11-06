@@ -164,7 +164,7 @@ h2 {
 }
 
 .Nayl {
-    background-image: url("");
+    background-image: url("images/TeamMembers_images/Nayl_Picture.png");
 }
 
 .Katherine {
