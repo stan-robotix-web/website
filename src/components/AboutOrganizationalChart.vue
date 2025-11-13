@@ -1,68 +1,50 @@
-<script setup></script>
+<script setup>
+import MemberCardComponent from './MemberCardComponent.vue';
+
+const members = [
+    {link : "images/TeamMembers_images/Nina_Picture.jpg", name : "Nina", title : "Team Captain", category : "Team Captains"},
+    {link : "images/TeamMembers_images/Timothee_Picture.jpg", name : "Timothée", title : "Dev Lead & Co-Captain", category : "Team Captains"},
+    {link : "images/TeamMembers_images/Maya_Picture.jpg", name : "Maya", title : "Communication Lead", category : "Team Members"},
+    {link : "images/TeamMembers_images/Alban_Picture.jpg", name : "Alban", title : "Construction Lead", category : "Team Members"},
+    {link : "images/TeamMembers_images/Nayl_Picture.jpg", name : "Nayl", title : "Dev Member", category : "Team Members"},
+    {link : "images/TeamMembers_images/Raphael_Picture.jpg", name : "Raphaël", title : "Dev Member", category : "Team Members"},
+    {link : "images/TeamMembers_images/Katherine_Picture.jpg", name : "Katherine", title : "Security Lead & Dev Member", category : "Team Members"},
+    {link : "images/TeamMembers_images/Raphael_Mentor_Picture.jpg", name : "Raphaël", title : "Dev Mentor & Coach", category : "Team Mentors"},
+    {link : "images/TeamMembers_images/Teo_Picture.jpg", name : "Téo", title : "Construction Mentor & Coach", category : "Team Mentors"}
+    ];
+</script>
 
 <template>
     <!-- image de l'organisation de StanRobotix?-->
     <h2 id="captains">Team Captains</h2>
+
     <div class="category">
-        <div class="Nina member">
-            <div>
-                <h4>Nina</h4>
-            </div>
-            <h5 class="description">Team Captain</h5>
-        </div>
-        <div class="Timothee member">
-            <div>
-                <h4>Timothée</h4>
-            </div>
-            <h5 class="description">Dev Team Captain</h5>
+        <div v-for="member in members">
+            <member-card-component v-if="member.category === 'Team Captains'">
+                <template v-slot:name>{{member.name}}</template>
+                <template v-slot:title>{{member.title}}</template>
+                <template v-slot:image><img></template>
+            </member-card-component>
         </div>
     </div>
     <h2 id="members">Team Members</h2>
     <div class="category">
-        <div class="Maya member">
-            <div>
-                <h4>Maya</h4>
-            </div>
-            <h5 class="description">Construction Team</h5>
-        </div>
-        <div class="Alban member">
-            <div>
-                <h4>Alban</h4>
-            </div>
-            <h5 class="description">Dev Team</h5>
-        </div>
-        <div class="Nayl member">
-            <div>
-                <h4>Nayl</h4>
-            </div>
-            <h5 class="description">Dev Team</h5>
-        </div>
-        <div class="Katherine member">
-            <div>
-                <h4>Katherine</h4>
-            </div>
-            <h5 class="description">Dev Team</h5>
-        </div>
-        <div class="Raphael member">
-            <div>
-                <h4>Raphaël</h4>
-            </div>
-            <h5 class="description">Dev Team</h5>
+        <div v-for="member in members">
+            <member-card-component v-if="member.category === 'Team Members'">
+                <template v-slot:name>{{member.name}}</template>
+                <template v-slot:title>{{member.title}}</template>
+                <template v-slot:image><img></template>
+            </member-card-component>
         </div>
     </div>
     <h2 id="mentors">Team Mentors</h2>
     <div class="category">
-        <div class="Raphael member">
-            <div>
-                <h4>Raphaël</h4>
-            </div>
-            <h5 class="description">Dev Team Mentor</h5>
-        </div>
-        <div class="Teo member">
-            <div>
-                <h4>Téo</h4>
-            </div>
-            <h5 class="description">Construction Mentor</h5>
+        <div v-for="member in members">
+            <member-card-component v-if="member.category === 'Team Mentors'">
+                <template v-slot:name>{{member.name}}</template>
+                <template v-slot:title>{{member.title}}</template>
+                <template v-slot:image><img></template>
+            </member-card-component>
         </div>
     </div>
 </template>
@@ -89,7 +71,7 @@ h2 {
     height: 500px;
     padding: 0 10px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     justify-items: stretch;
 }
