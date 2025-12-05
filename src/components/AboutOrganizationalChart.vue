@@ -2,21 +2,21 @@
 import MemberCardComponent from './MemberCardComponent.vue';
 
 const captains = [
-    { link: "/src/components/images/TeamMembers_images/Nina_Picture.jpg", name: "Nina", title: "Team Captain", category: "Team Captains" },
-    { link: "/src/components/images/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Dev Lead & Co-Captain", category: "Team Captains" }
+    { link: "/src/components/images/TeamMembers_images/Nina_Picture.jpg", name: "Nina", title: "Team Captain"},
+    { link: "/src/components/images/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Dev Lead & Co-Captain"}
 ];
 
 const members = [
-    { link: "/src/components/images/TeamMembers_images/Maya_Picture.jpg", name: "Maya", title: "Communication Lead", category: "Team Members" },
-    { link: "/src/components/images/TeamMembers_images/Alban_Picture.jpg", name: "Alban", title: "Construction Lead", category: "Team Members" },
-    { link: "/src/components/images/TeamMembers_images/Nayl_Picture.jpg", name: "Nayl", title: "Dev Member", category: "Team Members" },
-    { link: "/src/components/images/TeamMembers_images/Raphael_Picture.jpg", name: "Raphaël", title: "Dev Member", category: "Team Members" },
-    { link: "/src/components/images/TeamMembers_images/Katherine_Picture.jpg", name: "Katherine", title: "Security Lead & Dev Member", category: "Team Members" }
+    { link: "/src/components/images/TeamMembers_images/Maya_Picture.jpg", name: "Maya", title: "Communication Lead"},
+    { link: "/src/components/images/TeamMembers_images/Alban_Picture.jpg", name: "Alban", title: "Construction Lead"},
+    { link: "/src/components/images/TeamMembers_images/Nayl_Picture.jpg", name: "Nayl", title: "Dev Member"},
+    { link: "/src/components/images/TeamMembers_images/Raphael_Picture.jpg", name: "Raphaël", title: "Dev Member"},
+    { link: "/src/components/images/TeamMembers_images/Katherine_Picture.jpg", name: "Katherine", title: "Security Lead & Dev Member"}
 ];
 
 const mentors = [
-    { link: "/src/components/images/TeamMembers_images/Raphael_Mentor_Picture.jpg", name: "Raphaël", title: "Dev Mentor & Coach", category: "Team Mentors" },
-    { link: "/src/components/images/TeamMembers_images/Teo_Picture.jpg", name: "Téo", title: "Construction Mentor & Coach", category: "Team Mentors" }
+    { link: "/src/components/images/TeamMembers_images/Raphael_Mentor_Picture.jpg", name: "Raphaël", title: "Dev Mentor & Coach"},
+    { link: "/src/components/images/TeamMembers_images/Teo_Picture.jpg", name: "Téo", title: "Construction Mentor & Coach"}
 
 ];
 </script>
@@ -65,5 +65,6 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding: 15px 0;
 }
 </style>
