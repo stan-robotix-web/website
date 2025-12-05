@@ -1,12 +1,22 @@
-<script setup></script>
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  link: { // the default is right
+    type: String,
+    required: true
+  }
+});
+</script>
 
 <template>
     <div class="member">
         <div>
             <h4><slot name = "name"></slot></h4>
+            <h5 class="title"><slot name = "title"></slot></h5>
         </div>
-        <h5 class="title"><slot name = "title"></slot></h5>
         <slot name = "image"></slot>
+        <img :src=link>
     </div>
 </template>
 
@@ -15,43 +25,42 @@
 
 .member {
     display: flex;
-    background-color: $primary;
-    text-align: center;
-    border-radius: 10px;
     flex-direction: column;
-    align-content: stretch;
-    height: 75%;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 10px;
     width: 15%;
     min-width: 175px;
 
     h4,
     h5 {
         margin: 0;
-        height: 6%;
         color: white;
     }
 
     div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
         border-radius: 10px 10px 0px 0px;
-        padding: 1px 5px;
-        background: #6a829f;
+        background: $secondary;
 
         h4 {
-
-            background: linear-gradient(#cd2d3a, #e35730);
-            width: min-content;
-            height: 108%;
-            padding: 0 12px;
-            margin: auto;
+            background: linear-gradient($accent, $orange);
+            padding: 0 8px;
             border-radius: 8px;
+        }
+
+        h5 {
+            text-transform: uppercase;
         }
     }
 
-    h5 {
-        border-radius: 0px 0px 10px 10px;
-        padding: 4px 1px;
-        background: #6a829f;
-        text-transform: uppercase;
+    img {
+        border-radius: 0 0 10px 10px;
+        aspect-ratio: 2 / 3;
     }
 }
 </style>
