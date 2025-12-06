@@ -18,8 +18,8 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
       </p>
       <a class="pdf-link" href="/pdf/Wishlist.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
-        <img src="../../src/components/icons/PDF_file_icon.svg" />See our
-        Wishlist PDF
+        <img src="../../src/components/icons/PDF_file_icon.svg" />
+        See our Wishlist PDF
       </a>
 
       <div class="donate-button">
@@ -38,17 +38,17 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
 
     <h3>Documents</h3>
     <section class="docs">
-      <a class="pdf-link" href="/pdf/STAN ROBOTIX - SPONSORSHIP 2025-2026.pdf">
+      <a class="pdf-link" href="/pdf/STAN ROBOTIX - SPONSORSHIP 2025-2026.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />
         Sponsorship File
       </a>
-      <a class="pdf-link" href="/pdf/STAN ROBOTIX - DOSSIER COMMANDITE 2025-2026.pdf">
+      <a class="pdf-link" href="/pdf/STAN ROBOTIX - DOSSIER COMMANDITE 2025-2026.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />
         Dossier Commandite
       </a>
-      <a class="pdf-link" href="/pdf/FundingRequestLetter.pdf">
+      <a class="pdf-link" href="/pdf/FundingRequestLetter.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />
         Funding Request Letter
