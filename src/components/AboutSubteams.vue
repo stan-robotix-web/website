@@ -57,19 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     </ul>
                 </div>
             </div>
-            <div class="design subteam">
-                <div class="subteamName">
-                    <h3>Design<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
-                </div>
-                <div class="subteamExplanation">
-                    <ul>
-                        <li>Use SND's ideas to recreate precisely the macanisms in CAD</li>
-                        <li>Create models for the robot and other smaller parts</li>
-                        <li>Use 3D software such as Onshape</li>
-                        <li>Plan out the precise materials and screws that will be used by construction</li>
-                    </ul>
-                </div>
-            </div>
             <div class="construction subteam">
                 <div class="subteamName">
                     <h3>Construction<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
@@ -103,6 +90,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul>
                         <li>Take pictures of all the activities of the team and of events</li>
                         <li>Manage all of the team's social accounts (<a href="https://www.instagram.com/stan.robotix.6622">Instagram</a>, <a href="https://www.facebook.com/stanrobotix6622/">Facebook</a>, <a href="https://ca.linkedin.com/in/stan-robotix-3bb0a6263">LinkedIn</a>)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="design subteam">
+                <div class="subteamName">
+                    <h3>Design<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                </div>
+                <div class="subteamExplanation">
+                    <ul>
+                        <li>Use SND's ideas to recreate precisely the macanisms in CAD</li>
+                        <li>Create models for the robot and other smaller parts</li>
+                        <li>Use 3D software such as Onshape</li>
+                        <li>Plan out the precise materials and screws that will be used by construction</li>
                     </ul>
                 </div>
             </div>
