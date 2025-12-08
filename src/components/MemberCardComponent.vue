@@ -2,7 +2,7 @@
 import { defineProps } from 'vue';
 
 const props = defineProps({
-  link: { // the default is right
+  link: {
     type: String,
     required: true
   }
