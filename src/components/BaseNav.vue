@@ -50,7 +50,7 @@ export default {
           </a>
         </ul>
       </li>
-      <li><a :class="{ active: isActive('/robots/') }" href="/wip/">Robots</a></li>
+      <li><a :class="{ active: isActive('/robots/') }" href="/robots/">Robots</a></li>
       <li><a :class="{ active: isActive('/outreach/') }" href="/wip/">Outreach</a></li>
       <li><a :class="{ active: isActive('/sponsors/') }" href="/sponsors/">Sponsors</a></li>
     </ul>
