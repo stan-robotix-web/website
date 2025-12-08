@@ -9,7 +9,7 @@ const captains = [
 const members = [
     { link: "/src/components/images/TeamMembers_images/Maya_Picture.jpg", name: "Maya", title: "Communication Lead"},
     { link: "/src/components/images/TeamMembers_images/Alban_Picture.jpg", name: "Alban", title: "Construction Lead"},
-    { link: "/src/components/images/TeamMembers_images/Nayl_Picture.jpg", name: "Nayl", title: "Dev Member"},
+    { link: "/src/components/images/TeamMembers_images/Nayl_Picture.png", name: "Nayl", title: "Dev Member"},
     { link: "/src/components/images/TeamMembers_images/Raphael_Picture.jpg", name: "Raphaël", title: "Dev Member"},
     { link: "/src/components/images/TeamMembers_images/Katherine_Picture.jpg", name: "Katherine", title: "Security Lead & Dev Member"}
 ];
