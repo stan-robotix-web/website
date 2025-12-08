@@ -2,21 +2,21 @@
 import MemberCardComponent from './MemberCardComponent.vue';
 
 const captains = [
-    { link: "/src/components/images/TeamMembers_images/Nina_Picture.jpg", name: "Nina", title: "Team Captain"},
-    { link: "/src/components/images/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Dev Lead & Co-Captain"}
+    { link: "/TeamMembers_images/Nina_Picture.jpg", name: "Nina", title: "Team Captain"},
+    { link: "/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Dev Lead & Co-Captain"}
 ];
 
 const members = [
-    { link: "/src/components/images/TeamMembers_images/Maya_Picture.jpg", name: "Maya", title: "Communication Lead"},
-    { link: "/src/components/images/TeamMembers_images/Alban_Picture.jpg", name: "Alban", title: "Construction Lead"},
-    { link: "/src/components/images/TeamMembers_images/Nayl_Picture.png", name: "Nayl", title: "Dev Member"},
-    { link: "/src/components/images/TeamMembers_images/Raphael_Picture.jpg", name: "Raphaël", title: "Dev Member"},
-    { link: "/src/components/images/TeamMembers_images/Katherine_Picture.jpg", name: "Katherine", title: "Security Lead & Dev Member"}
+    { link: "/TeamMembers_images/Maya_Picture.jpg", name: "Maya", title: "Communication Lead"},
+    { link: "/TeamMembers_images/Alban_Picture.jpg", name: "Alban", title: "Construction Lead"},
+    { link: "/TeamMembers_images/Nayl_Picture.png", name: "Nayl", title: "Dev Member"},
+    { link: "/TeamMembers_images/Raphael_Picture.jpg", name: "Raphaël", title: "Dev Member"},
+    { link: "/TeamMembers_images/Katherine_Picture.jpg", name: "Katherine", title: "Security Lead & Dev Member"}
 ];
 
 const mentors = [
-    { link: "/src/components/images/TeamMembers_images/Raphael_Mentor_Picture.jpg", name: "Raphaël", title: "Dev Mentor & Coach"},
-    { link: "/src/components/images/TeamMembers_images/Teo_Picture.jpg", name: "Téo", title: "Construction Mentor & Coach"}
+    { link: "/TeamMembers_images/Raphael_Mentor_Picture.jpg", name: "Raphaël", title: "Dev Mentor & Coach"},
+    { link: "/TeamMembers_images/Teo_Picture.jpg", name: "Téo", title: "Construction Mentor & Coach"}
 
 ];
 </script>
