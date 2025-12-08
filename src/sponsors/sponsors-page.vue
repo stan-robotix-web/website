@@ -16,20 +16,16 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
         A donation could help us with our future projects and competitions,
         especially with the cost of materials, tools and travel expenses.
       </p>
-      <a class="wishlist" href="/pdf/Wishlist.pdf" download>
+      <a class="pdf-link" href="/pdf/Wishlist.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
-        <img src="../../src/components/icons/PDF_file_icon.svg" />See our
-        Wishlist PDF
+        <img src="../../src/components/icons/PDF_file_icon.svg" />
+        See our Wishlist PDF
       </a>
 
       <div class="donate-button">
-        <a
-          class="donate"
-          href="https://fondation.stanislas.qc.ca/fcs-1/don-en-ligne/stan-robotix-40"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Donate <i class="fa-solid fa-chevron-right"></i
-        ></a>
+        <a class="donate" href="https://fondation.stanislas.qc.ca/fcs-1/don-en-ligne/stan-robotix-2026-40"
+          target="_blank" rel="noopener noreferrer">Donate <i class="fa-solid fa-chevron-right"></i>
+        </a>
       </div>
     </section>
 
@@ -42,15 +38,20 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
 
     <h3>Documents</h3>
     <section class="docs">
-      <a class="wishlist" href="/pdf/Sponsorship_file.pdf" download>
+      <a class="pdf-link" href="/pdf/STAN ROBOTIX - SPONSORSHIP 2025-2026.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
         <img src="../../src/components/icons/PDF_file_icon.svg" />
         Sponsorship File
       </a>
-      <a class="wishlist" href="/pdf/FundingRequestLetter.pdf" download>
+      <a class="pdf-link" href="/pdf/STAN ROBOTIX - DOSSIER COMMANDITE 2025-2026.pdf" download>
         <!-- the link on the deployed version goes to "public/pdf..." -->
-        <img src="../../src/components/icons/PDF_file_icon.svg" />Funding
-        Request Letter
+        <img src="../../src/components/icons/PDF_file_icon.svg" />
+        Dossier Commandite
+      </a>
+      <a class="pdf-link" href="/pdf/FundingRequestLetter.pdf" download>
+        <!-- the link on the deployed version goes to "public/pdf..." -->
+        <img src="../../src/components/icons/PDF_file_icon.svg" />
+        Funding Request Letter
       </a>
     </section>
   </main>
@@ -100,6 +101,7 @@ main {
   h2 {
     color: $text;
   }
+
   background-color: white;
   box-shadow: 0 0 10px rgba(black, 0.1);
 }
@@ -112,7 +114,7 @@ a {
   }
 }
 
-a.wishlist {
+a.pdf-link {
   font-weight: 500;
   margin-top: 2em;
   width: max-content;
