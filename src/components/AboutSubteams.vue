@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <template>
     <main>
         <div class="subteamsContainer">
-            <h2 class="title">Team Members</h2>
+            <h2 class="title">Subteams</h2>
             <div class="programming subteam">
                 <div class="subteamName">
                     <h3>Programming<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
@@ -54,19 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li>Brainstorm with your team to invent a robot to play the competitions's game</li>
                         <li>Plan game strategies for the competition based on the rulebook</li>
                         <li>Plan out the different subsystems that will be present on the robot</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="design subteam">
-                <div class="subteamName">
-                    <h3>Design<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
-                </div>
-                <div class="subteamExplanation">
-                    <ul>
-                        <li>Use SND's ideas to recreate precisely the macanisms in CAD</li>
-                        <li>Create models for the robot and other smaller parts</li>
-                        <li>Use 3D software such as Onshape</li>
-                        <li>Plan out the precise materials and screws that will be used by construction</li>
                     </ul>
                 </div>
             </div>
@@ -106,6 +93,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     </ul>
                 </div>
             </div>
+            <div class="design subteam">
+                <div class="subteamName">
+                    <h3>Design<span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></h3>
+                </div>
+                <div class="subteamExplanation">
+                    <ul>
+                        <li>Use SND's ideas to recreate precisely the macanisms in CAD</li>
+                        <li>Create models for the robot and other smaller parts</li>
+                        <li>Use 3D software such as Onshape</li>
+                        <li>Plan out the precise materials and screws that will be used by construction</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 </template>
@@ -133,6 +133,7 @@ $grid-rows: 3;
 .title {
     justify-self: center;
     grid-area: title;
+    
 
     font-weight: 600;
     font-size: 300%;

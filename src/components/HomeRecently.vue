@@ -34,7 +34,7 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
 
       <NewsCardClickable link="https://lesserpuariens.com/" target="Serpuarien">
         <template v-slot:img>
-          <img src="../components/images/Serpuarien-2025.jpg"/>
+          <img src="../components/images/Outreach_images/Serpuarien-2025.JPG"/>
         </template>
         <template v-slot:tag>Outreach</template>
         <template v-slot:date>Fall 2024</template>

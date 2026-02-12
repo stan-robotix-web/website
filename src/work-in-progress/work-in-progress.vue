@@ -6,8 +6,9 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
 <template>
   <BaseHeader/>
   <main>
-    <h1>Work in Progress</h1>
-    <h3>Check back soon for updates!</h3>
+    <h1>This page is still being updated !</h1>
+    <h3>Our team of students are actively working on this page. <br>Check back soon for updates!<br>
+    If you want to contact us or get more information about the team, send us a mail : <a href="mailto:stanrobotix@gmail.com">stanrobotix@gmail.com</a></h3>
   </main>
   <BaseFooter/>
 </template>
