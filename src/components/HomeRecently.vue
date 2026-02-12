@@ -47,10 +47,10 @@ import NewsCardUnclick from "./NewsCardUnclick.vue";
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 main {
-  background-color: $primary;
+  background-color: base.$primary;
   margin: auto;
   padding: 15px;
 
@@ -62,7 +62,7 @@ main {
     width: max-content;
     margin: 15px auto;
 
-    border-bottom: 4px solid $blue;
+    border-bottom: 4px solid base.$blue;
   }
 }
 

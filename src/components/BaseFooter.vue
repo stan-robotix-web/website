@@ -116,7 +116,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 main {
   position: relative;
@@ -132,7 +132,7 @@ h2 {
 
 hr {
   border-width: 0px;
-  border-top: 1px solid $primary;
+  border-top: 1px solid base.$primary;
   width: 50vw;
   margin: 10px auto;
 }
@@ -145,13 +145,13 @@ h5 {
 
   a {
     font-weight: 500;
-    color: $accent;
+    color: base.$accent;
     padding: 5px;
     border-radius: 10px;
   }
 
   a:hover {
-    background-color: $accent;
+    background-color: base.$accent;
     color: white;
   }
 }
@@ -159,8 +159,8 @@ h5 {
 footer {
   position: relative;
   z-index: 1;
-  outline: 1px solid $primary;
-  background-color: $background;
+  outline: 1px solid base.$primary;
+  background-color: base.$background;
   padding: 25px;
   margin: 25px 0px 25px;
   display: grid;
@@ -187,10 +187,10 @@ footer {
       h1 {
         font-size: 32px;
         line-height: 1.5;
-        color: $text;
+        color: base.$text;
 
         span {
-          background-color: $accent;
+          background-color: base.$accent;
           border-radius: 8vh;
           padding: 5px 0.6em;
           color: white;
@@ -251,11 +251,11 @@ footer {
         display: block;
 
         a:hover {
-          background-color: rgba($secondary, $alpha: 0.2);
+          background-color: rgba(base.$secondary, $alpha: 0.2);
         }
 
         li {
-          color: $secondary;
+          color: base.$secondary;
           font-weight: 300;
           margin-left: 0px;
           clear: both;
@@ -277,20 +277,20 @@ footer {
       display: flex;
       justify-content: left;
       align-items: center;
-      outline: 0px solid $primary;
+      outline: 0px solid base.$primary;
       position: relative;
       z-index: 2;
     }
 
     a:hover {
       transition: all 0.5s ease;
-      background-color: rgba($secondary, $alpha: 0.2);
-      outline: 1px solid $secondary;
+      background-color: rgba(base.$secondary, $alpha: 0.2);
+      outline: 1px solid base.$secondary;
     }
 
     a.active {
       color: white;
-      background-color: $secondary;
+      background-color: base.$secondary;
     }
   }
 }
@@ -332,7 +332,7 @@ footer {
     a {
       position: relative;
       height: auto;
-      color: $text;
+      color: base.$text;
       width: 70px;
       display: flex;
       align-items: center;
@@ -341,8 +341,8 @@ footer {
 
     a:hover {
       span {
-        background-color: rgba($secondary, $alpha: 0.2);
-        outline: 1px solid $secondary;
+        background-color: rgba(base.$secondary, $alpha: 0.2);
+        outline: 1px solid base.$secondary;
       }
     }
   }

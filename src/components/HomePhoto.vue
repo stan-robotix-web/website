@@ -12,7 +12,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 section {
   width: 98vw;
@@ -38,12 +38,12 @@ main {
   flex-flow: row-reverse;
   align-items: flex-end;
   border-radius: 10px;
-  // box-shadow: 0px 10px 12px rgba($text, $alpha: 0.4);
+  // box-shadow: 0px 10px 12px rgba(base.$text, base.$alpha: 0.4);
 }
 
 h5 {
-  color: $background;
-  text-shadow: 1px 1px 0px rgba($text, $alpha: 0.8);
+  color: base.$background;
+  text-shadow: 1px 1px 0px rgba(base.$text, base.$alpha: 0.8);
   font-weight: 400;
   display: inline;
   font-size: 16px;

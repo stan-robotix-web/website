@@ -57,7 +57,7 @@ To add a component :
     </template>
 
     <style scoped lang="scss">
-    @import "../assets/base.scss";
+    @use "../assets/base.scss";
     </style>
     ```
 2. You can now add this component to a page by using `import ComponentName from '../../src/components/ComponentName.vue'` in the `<script setup>`, and using it with the `<ComponentName/>` tag inside the html.

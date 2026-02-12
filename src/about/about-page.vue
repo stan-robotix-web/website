@@ -19,10 +19,10 @@ import AboutExplanatoryText from '../../src/components/AboutExplanatoryText.vue'
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 template {
-    color: $text;
+    color: base.$text;
 }
 
 h1 {

@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 $grid-columns: 3;
 $grid-rows: 3;
@@ -142,7 +142,7 @@ $grid-rows: 3;
     width: max-content;
     margin: 15px auto;
 
-    border-bottom: 4px solid $blue;
+    border-bottom: 4px solid base.$blue;
 }
 
 .programming {
@@ -179,33 +179,33 @@ $grid-rows: 3;
     display: flex;
     max-height: 20%;
     height: 100%;
-    background-color: $primary;
-    color: $text;
+    background-color: base.$primary;
+    color: base.$text;
     align-items: center;
     justify-content: center;
 
     h3 {
         width: 100%;
-        color: $blue;
+        color: base.$blue;
         cursor: pointer;
         text-align: center;
         padding: calc(4vh - 12px) 0;
         margin: 0;
 
         .arrow {
-            color: $accent;
+            color: base.$accent;
             margin-left: 5px;
         }
     }
 
     h3:hover {
-        color: $accent;
+        color: base.$accent;
         font-weight: 1000;
     }
 }
 
 .subteamExplanation {
-    background-color: $primary;
+    background-color: base.$primary;
     max-height: 0px;
     height: 100%;
     overflow: hidden;
@@ -228,7 +228,7 @@ $grid-rows: 3;
     flex-flow: column nowrap;
     justify-content: flex-end;
     transition: 0.5s ease-in-out;
-    border: 5px solid $primary;
+    border: 5px solid base.$primary;
 
     * {  
         transition: inherit;

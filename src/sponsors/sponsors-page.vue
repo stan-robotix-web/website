@@ -59,7 +59,8 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
+@use "sass:color";
 
 section.docs {
   display: flex;
@@ -70,7 +71,7 @@ section.docs {
   a {
     font-size: 1.5em;
     font-weight: 500;
-    color: $accent;
+    color: base.$accent;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -93,13 +94,13 @@ main {
     text-align: center;
     width: max-content;
     margin: 0.75em auto 15px;
-    color: darken($secondary, 10%);
+    color: color.adjust(base.$secondary, $lightness: -10%);
   }
 }
 
 .donating {
   h2 {
-    color: $text;
+    color: base.$text;
   }
 
   background-color: white;
@@ -107,7 +108,7 @@ main {
 }
 
 a {
-  color: $accent;
+  color: base.$accent;
 
   &:hover {
     text-decoration: underline;
@@ -132,7 +133,7 @@ p {
 }
 
 a.donate {
-  background-color: $accent;
+  background-color: base.$accent;
   color: white;
   font-size: 1.5em;
   padding: 0.5em 1.4em;
@@ -146,8 +147,8 @@ a.donate {
 
   &:hover {
     background-color: rgba(white, 0.5);
-    color: $accent;
-    outline: 3px solid $accent;
+    color: base.$accent;
+    outline: 3px solid base.$accent;
   }
 }
 </style>

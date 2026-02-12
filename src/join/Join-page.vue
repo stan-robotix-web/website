@@ -17,12 +17,12 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
 even though a member can obviously be part of multiple <a href="/about/#subteams"><span>subteams</span></a> at the same time!  
 We work on a regular schedule within Collège Stanislas in Montreal.  
 Here is the typical weekly schedule, depending on the subteam you're in: <br>  
-<div>Build Team:</div>  <li>Thursday and Friday from 5:30 PM to 7:30 PM.</li>  
+<!-- <div>Build Team:</div>  <li>Thursday and Friday from 5:30 PM to 7:30 PM.</li>  
 <div>Media Team:</div>  <li>Friday from 5:30 PM to 7:30 PM.</li>  
 <div>Marketing Team:</div>  <li>Friday from 5:30 PM to 7:30 PM.</li>  
 <div>Finance Team:</div>  <li>Thursday from 5:30 PM to 7:30 PM.</li>  
 <div>Programming Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li>  
-<div>Design Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li>
+<div>Design Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li> -->
       </p>
        
     </div><div class="member band" id="student">
@@ -52,7 +52,7 @@ Here is the typical weekly schedule, depending on the subteam you're in: <br>
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 h2 {
   text-align: center;
@@ -74,23 +74,23 @@ h3 {
   font-family: "New Amsterdam", sans-serif;
 
   a {
-    color: $accent;
+    color: base.$accent;
   }
 }
 
 .band {
-  background-color: $grey;
-  border: 10px solid $secondary;
+  background-color: base.$grey;
+  border: 10px solid base.$secondary;
   margin: auto;
   margin-top: 50px;
   width: 60%;
   padding: 0 15px;
 
   h3 {
-    color: $accent;
+    color: base.$accent;
 
     span {
-      color: $blue;
+      color: base.$blue;
     }
   }
 
@@ -111,7 +111,7 @@ h3 {
     font-size: large;
   }
   a span {
-    color: $blue;
+    color: base.$blue;
   }
 }
 </style>

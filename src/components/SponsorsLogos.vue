@@ -18,10 +18,10 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 .sponsors {
-  background-color: $background;
+  background-color: base.$background;
 
   display: flex;
   height: 75px;
@@ -34,12 +34,12 @@
   justify-content: space-evenly;
   align-items: center;
   z-index: 0;
-  // box-shadow: 0px -5px 0px 0 $accent, 0 -10px 0px 0px $text , 0 -15px 0px 0px $primary;
+  // box-shadow: 0px -5px 0px 0 base.$accent, 0 -10px 0px 0px base.$text , 0 -15px 0px 0px base.$primary;
 
   a,
   img {
     height: 100%;
-    color: $accent;
+    color: base.$accent;
     transition: all 0.5s ease;
   }
 

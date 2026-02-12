@@ -113,7 +113,7 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 $line-distance : 50px;
 $circle-radius : 15px;
@@ -148,7 +148,7 @@ nav {
     left: 50%;
     font-size: 32px;
     width: min-content;
-    color: $accent;
+    color: base.$accent;
     transform: translateX(-50%) translateY(-10px);
   }
 }
@@ -156,7 +156,7 @@ nav {
 // Styles specific to year
 
 .card { // DEFAULT
-  @include content($primary);
+  @include content(base.$primary);
 }
 
 #reefscape {

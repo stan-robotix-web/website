@@ -26,10 +26,10 @@ import HomeInstaFeed from "../components/HomeInsta.vue";
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 h1 span {
-  background-color: $accent;
+  background-color: base.$accent;
   border-radius: 1em;
   padding: 5px 0.5em;
   color: white;

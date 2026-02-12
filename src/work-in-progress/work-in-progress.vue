@@ -14,7 +14,7 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 h1 {
     font-size: 4em;
