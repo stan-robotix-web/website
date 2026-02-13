@@ -146,32 +146,32 @@ $grid-rows: 3;
 }
 
 .programming {
-    background-image: url("images/Subteams_images_Temp/ProgTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//ProgTeam_Picture.jpg");
     grid-area: programming;
 }
 
 .SND {
-    background-image: url("images/Subteams_images_Temp/SnDTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//SnDTeam_Picture.jpg");
     grid-area: SND;
 }
 
 .construction {
-    background-image: url("images/Subteams_images_Temp/ConstructionTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//ConstructionTeam_Picture.jpg");
     grid-area: construction;
 }
 
 .marketing {
-    background-image: url("images/Subteams_images_Temp/MarketingTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//MarketingTeam_Picture.jpg");
     grid-area: marketing;
 }
 
 .medias {
-    background-image: url("images/Subteams_images_Temp/MediasTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//MediasTeam_Picture.jpg");
     grid-area: medias;
 }
 
 .design {
-    background-image: url("images/Subteams_images_Temp/DesignTeam_Picture.jpg");
+    background-image: url("images/Subteams_images/Subteams_images_Temp//DesignTeam_Picture.jpg");
     grid-area: design;
 }
 

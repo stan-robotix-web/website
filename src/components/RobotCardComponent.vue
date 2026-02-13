@@ -248,11 +248,11 @@ $circle-radius : 15px;
   @include content($primary);
 }
 
-#reefscape {
+#reefscape_2025 {
   @include content(#b2e6f4);
 }
 
-#crescendo {
+#crescendo_2024 {
   @include content(#aedaca);
 }
 
