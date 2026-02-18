@@ -8,6 +8,8 @@ export default {
   methods: {
     getBasePath() {
       const pathArray = window.location.pathname.split("/");
+      console.log(pathArray);
+      console.log(pathArray[1]);
       // Supposons que le chemin de base soit le nom du dépôt, ici 'website'
       return `/${pathArray[1]}`;
     },
@@ -15,11 +17,14 @@ export default {
       const basePath = this.getBasePath();
       const currentPath = window.location.pathname;
 
+      console.log(currentPath);
+      console.log(basePath);
+      console.log(`${path}`)
       // Vérifiez si le chemin est la racine et que le path spécifié est '/home.html'
-      if (currentPath === `${basePath}/` && path === "/home.html") {
+      if (currentPath === `${basePath}` && path === "/home.html") {
         return true;
       }
-      return currentPath === `${basePath}${path}`;
+      return currentPath === `${path}`;
     },
   },
 };
@@ -91,7 +96,7 @@ export default {
           <a href="https://www.facebook.com/stanrobotix6622" id="fb" target="”_blank”"
             ><span><i class="fa-brands fa-facebook-f"></i> </span
           ></a>
-          <a href="https://github.com/PragmaCube/Stan-Robotix-Source" id="linke" target="”_blank”"
+          <a href="https://github.com/stan-robotix-6622" id="github" target="”_blank”"
             ><span><i class="fa-brands fa-github"></i> </span
           ></a>
           <a href="mailto:stanrobotix@gmail.com" id="mail"
@@ -288,7 +293,7 @@ footer {
       outline: 1px solid $secondary;
     }
 
-    a.active {
+    a.active, a.active>li{
       color: white;
       background-color: $secondary;
     }
