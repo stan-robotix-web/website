@@ -8,8 +8,7 @@ export default {
   methods: {
     getBasePath() {
       const pathArray = window.location.pathname.split("/");
-      console.log(pathArray);
-      console.log(pathArray[1]);
+      
       // Supposons que le chemin de base soit le nom du dépôt, ici 'website'
       return `/${pathArray[1]}`;
     },
@@ -17,9 +16,6 @@ export default {
       const basePath = this.getBasePath();
       const currentPath = window.location.pathname;
 
-      console.log(currentPath);
-      console.log(basePath);
-      console.log(`${path}`)
       // Vérifiez si le chemin est la racine et que le path spécifié est '/home.html'
       if (currentPath === `${basePath}` && path === "/home.html") {
         return true;
