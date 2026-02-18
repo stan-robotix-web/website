@@ -9,7 +9,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
 
   <BaseHeader />
 
-  <main>
+  <main class="outreach-main">
     <h1>Outreach</h1>
     <h2>Our Projects</h2>
     <div class="grid">
@@ -51,7 +51,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
       </ProjectCard>
       <ProjectCard>
         <template v-slot:img>
-          <img class="img" src="../components/images/robot-2025.jpg" />
+          <img class="img" src="../components/images/Robot_images/2025_robot.jpg" />
         </template>
         <template v-slot:tag>Event</template>
         <template v-slot:date>March 6-8, 2025</template>
@@ -87,7 +87,7 @@ h1 {
   font-size: min(13vw, 80px);
 }
 
-main {
+.outreach-main {
   background-color: $primary;
   margin: auto;
   padding: 15px;
