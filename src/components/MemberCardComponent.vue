@@ -15,7 +15,7 @@ const props = defineProps({
             <h5 class="title"><slot name = "title"></slot></h5>
         </div>
         <slot name = "image"></slot>
-        <img :src=link>
+        <img :src=link alt="Member's picture">
     </div>
 </template>
 
