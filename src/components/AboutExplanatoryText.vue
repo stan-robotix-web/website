@@ -10,7 +10,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 p {
     text-align: center;

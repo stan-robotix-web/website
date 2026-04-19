@@ -58,7 +58,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 .openButton {
   display: none;
@@ -98,7 +98,7 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      outline: 0px solid $primary;
+      outline: 0px solid base.$primary;
       position: relative;
       z-index: 2;
     }
@@ -111,13 +111,13 @@ nav {
 
     a:hover {
       transition: all 0.5s ease;
-      background-color: rgba($secondary, $alpha: 0.2);
-      outline: 1px solid $secondary;
+      background-color: rgba(base.$secondary, $alpha: 0.2);
+      outline: 1px solid base.$secondary;
     }
 
     a.active {
       color: white;
-      background-color: $secondary;
+      background-color: base.$secondary;
     }
   }
 
@@ -132,7 +132,7 @@ nav {
 
     ul {
       height: auto;
-      background: $grey;
+      background: base.$grey;
       padding-top: 40px;
       transform: translateY(-40px);
       border-radius: 10px;
@@ -169,7 +169,7 @@ ul li ul:focus {
     top: 10px;
     right: 10px;
     font-size: 24px;
-    background-color: $background;
+    background-color: base.$background;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -185,7 +185,7 @@ ul li ul:focus {
     top: 0px;
     right: 0px;
     padding: 8px 20px;
-    background-color: $background;
+    background-color: base.$background;
     z-index: 3;
     transform: translateX(110%);
 
@@ -215,7 +215,7 @@ ul li ul:focus {
           transform: translate(0, 0);
           background-color: transparent;
           font-size: 90%;
-          color: $secondary;
+          color: base.$secondary;
 
           li {
             padding: 0;

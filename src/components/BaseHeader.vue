@@ -17,7 +17,7 @@ import BaseNav from './BaseNav.vue'
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 header {
   display: grid;
@@ -60,11 +60,11 @@ header a {
   height: min-content;
   width: min-content;
   line-height: 1;
-  color: rgba($text, 0.9);
+  color: rgba(base.$text, 0.9);
 }
 
 .icons a:hover {
-  color: rgba($secondary, $alpha: 0.6);
+  color: rgba(base.$secondary, $alpha: 0.6);
 }
 
 h1 {

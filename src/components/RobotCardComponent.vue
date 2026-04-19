@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps({
   side: { // the default is right
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 $line-distance : 50px;
 $circle-radius : 15px;
@@ -114,13 +113,13 @@ $circle-radius : 15px;
     cursor: pointer;
 
     i {
-      color: $accent;
+      color: base.$accent;
       transition: all 0.5s ease-out;
     }
   }
 
   a:hover {
-    color: $accent;
+    color: base.$accent;
     font-weight: 500;
   }
 
@@ -213,7 +212,7 @@ $circle-radius : 15px;
 .line {
   position: relative;
   grid-area: timeline;
-  background: $accent;
+  background: base.$accent;
   width: 4px;
   height: 100%;
 
@@ -224,7 +223,7 @@ $circle-radius : 15px;
     width: $circle-radius;
     height: $circle-radius;
     border-radius: 50%;
-    background: linear-gradient($accent, $orange);
+    background: linear-gradient(base.$accent, base.$orange);
     transform: translate(-50%, -50%);
   }
 
@@ -233,7 +232,7 @@ $circle-radius : 15px;
     top: 50%;
     left: calc(50% + $circle-radius/2 + 3px);
     width: $line-distance;
-    border-top: 5px dotted $accent;
+    border-top: 5px dotted base.$accent;
     transform: translateY(-50%);
   }
 
@@ -245,7 +244,7 @@ $circle-radius : 15px;
 // Styles specific to year
 
 .card { // DEFAULT
-  @include content($primary);
+  @include content(base.$primary);
 }
 
 #reefscape_2025 {

@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps({
   link: {
@@ -21,13 +20,13 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 .member {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: $primary;
+    background-color: base.$primary;
     border-radius: 10px;
     width: 15%;
     min-width: 175px;
@@ -45,10 +44,10 @@ const props = defineProps({
         gap: 4px;
         padding: 4px;
         border-radius: 10px 10px 0px 0px;
-        background: $secondary;
+        background: base.$secondary;
 
         h4 {
-            background: linear-gradient($accent, $orange);
+            background: linear-gradient(base.$accent, base.$orange);
             padding: 0 8px;
             border-radius: 8px;
         }

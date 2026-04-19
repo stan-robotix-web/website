@@ -18,7 +18,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 main {
   padding: 20px;
@@ -34,10 +34,10 @@ main > h2 {
   width: max-content;
   margin: 10px auto 40px;
 
-  border-bottom: 4px solid $accent;
+  border-bottom: 4px solid base.$accent;
 
   i {
-    color: $accent;
+    color: base.$accent;
   }
 }
 

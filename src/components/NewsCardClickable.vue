@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps({
   link: {
@@ -34,10 +33,10 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 h3 {
-  color: $blue;
+  color: base.$blue;
   margin: 15px 0px 0px;
   grid-area: mid;
 
@@ -131,7 +130,7 @@ h4 {
   color: white;
   border-radius: 10px;
   padding: 2px 10px;
-  background: linear-gradient($accent, $orange);
+  background: linear-gradient(base.$accent, base.$orange);
   width: max-content;
   height: min-content;
 }
@@ -140,7 +139,7 @@ h5 {
   text-align: justify;
   font-weight: 300;
   margin-left: 15px;
-  color: $secondary;
+  color: base.$secondary;
 }
 
 a {
@@ -150,13 +149,13 @@ a {
   transition: all 0.5s ease;
 
   i {
-    color: $accent;
+    color: base.$accent;
     transition: all 0.5s ease-out;
   }
 }
 
 h3+a:hover {
-  color: $accent;
+  color: base.$accent;
   font-weight: 500;
 
   i {

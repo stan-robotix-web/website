@@ -47,7 +47,7 @@ const mentors = [
 </template>
 
 <style scoped lang="scss">
-@import "../assets/base.scss";
+@use "../assets/base.scss";
 
 h2 {
     font-weight: 600;
@@ -56,7 +56,7 @@ h2 {
     width: max-content;
     margin: 15px auto;
 
-    border-bottom: 4px solid $blue;
+    border-bottom: 4px solid base.$blue;
 }
 
 .category {
