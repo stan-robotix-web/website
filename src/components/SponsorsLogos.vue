@@ -2,9 +2,8 @@
 
 <template>
   <section class="sponsors">
-    <a href="/sponsors/#donating">
-      <i class="fa-solid fa-plus"></i>
-      <h3>Add Your <br />Logo Here</h3>
+    <a href="https://www.msfoundation.org/accueil.html" target="_blank">
+      <img src="./images/Sponsors-logo/Fondation-Macdonald-Steward-logo.png" alt="Fondation Macdonald Steward" />
     </a>
     <a href="/sponsors/#donating">
       <i class="fa-solid fa-plus"></i>
