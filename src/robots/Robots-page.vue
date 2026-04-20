@@ -11,6 +11,12 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
     <h1>Robots</h1>
 
     <nav>
+      <a href="#rebuilt_2026">
+        <h2>2026</h2>
+        <img
+          src="../components/images/Competition_logos/2026_REBUILT/Horizontal/first_age_frc_rebuilt_wordmark_rgb_black.png"
+          class="logo" min-width="336px">
+      </a>
       <a href="#reefscape_2025">
         <h2>2025</h2>
         <img src="../components/images/Competition_logos/2025_REEFSCAPE/2025_logo_text.png" class="logo"
@@ -40,6 +46,19 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
 
     <div class="timeline">
       <i class="fa-solid fa-chevron-up arrow"></i>
+      <RobotCardComponent side="right" year="rebuilt_2026">
+        <template v-slot:logo>
+          <img src="../components/images/Competition_logos/2026_REBUILT/Vertical/first_age_frc_rebuilt_logo_vertical_rgb_fullcolor.png" min-width="116px"
+            width="100%">
+        </template>
+        <template v-slot:img>
+          <img src="../components/images/Robot_images/2026_robot.jpg" width="100%">
+        </template>
+        <template v-slot:desc>
+          Description
+        </template>
+        <template v-slot:date>Rebuilt<sup>SM</sup> - 2026</template>
+      </RobotCardComponent>
       <RobotCardComponent side="left" year="reefscape_2025">
         <template v-slot:logo>
           <img src="../components/images/Competition_logos/2025_REEFSCAPE/2025_logo_patch.png" min-width="116px"
@@ -115,7 +134,10 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
 
 nav {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  row-gap: 20px;
   width: 80vw;
   margin: auto;
 
