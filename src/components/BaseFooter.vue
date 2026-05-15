@@ -63,7 +63,7 @@ export default {
             </ul>
           </li>
           <li>
-            <a :class="{ active: isActive('/robots/') }" href="/wip/"
+            <a :class="{ active: isActive('/robots/') }" href="/robots/"
               >Robots</a
             >
           </li>
