@@ -55,7 +55,9 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           <img src="../components/images/Robot_images/2026_robot.jpg" width="100%">
         </template>
         <template v-slot:desc>
-          Description
+          Our robot for Rebuilt had three mecanisms: the intake was able to pickup fuel on the ground and store it in
+          the robot, the shooter could shoot that fuel up in the air in order to put it in the hub, and the climb was
+          capable of lifting the robot off the ground.
         </template>
         <template v-slot:date>Rebuilt<sup>SM</sup> - 2026</template>
       </RobotCardComponent>
