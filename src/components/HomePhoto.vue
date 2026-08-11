@@ -6,7 +6,7 @@
   <section>
     <main>
       <!-- TODO-Content: photo date and description -->
-      <h5>March 6, 2025 - Team Photo</h5>
+      <h5>April 11, 2026 - Team Photo</h5>
     </main>
   </section>
 </template>
@@ -23,7 +23,7 @@ section {
 
 main {
   // TODO-Content: put a team photo
-  background-image: url("../components/images/Outreach_images/TeamPic-2025.jpg");
+  background-image: url("../components/images/Outreach_images/TeamPic-2026.jpg");
 
   min-height: 90vh;
   width: 90vw;
