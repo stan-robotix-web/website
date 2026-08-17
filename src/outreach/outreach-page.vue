@@ -22,7 +22,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
         <template v-slot:title>We were supporting Breast Cancer by participating in "octobre-rose"</template>
         <template v-slot:desc>
           During the month of October, we supported "octobre-rose", a breast cancer awareness initiative. We tried to
-          support the initiative by making social media posts to spread the messag even further.
+          support the initiative by making social media posts to spread the message even further.
         </template>
       </ProjectCard>
       <ProjectCard>
@@ -33,7 +33,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
         <template v-slot:date>October 14, 2025</template>
         <template v-slot:title>Our team presenting robotics to parents</template>
         <template v-slot:desc>
-          When our school was open so parents could visit their kids school, we made a small booth where we presented
+          When our school was open so parents could visit their kids' school, we made a small booth where we presented
           robotics to parents and answered their questions about robotics and our team.
         </template>
       </ProjectCard>
@@ -46,7 +46,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
         <template v-slot:title>Our robot at the Gala</template>
         <template v-slot:desc>
           Our students decorated and drove the team's robot the our school gala. We were trying to spread awareness
-          about what is really a robotics team and how hard we work, enven off-season to make the robotic world better.
+          about what is really a robotics team and how hard we work, even off-season to make the robotic world better.
         </template>
       </ProjectCard>
       <ProjectCard>

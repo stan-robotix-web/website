@@ -40,6 +40,12 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           src="../components/images/Competition_logos/2022_RAPID REACT/Horizontal/Full Color/RAPID_REACT_Logo_Horizontal_RGB_FullColor-01.png"
           class="logo" min-width="378px">
       </a>
+      <a href="#destination_deep_space_2019">
+        <h2>2019</h2>
+        <img
+          src="../components/images/Competition_logos/2019_DESTINATION DEEP SPACE/Horizontal/DESTINATION_DEEP_SPACE_Logo_Horizontal_RGB_FullColor.svg"
+          class="logo" min-width="378px">
+      </a>
     </nav>
 
 
@@ -125,6 +131,17 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           our climber was able to pull itself from the second level bar.
         </template>
         <template v-slot:date>RAPID REACT<sup>SM</sup> - 2022</template>
+      </RobotCardComponent>
+      <RobotCardComponent side="left" year="destination_deep_space_2019">
+        <template v-slot:logo>
+          <img
+            src="../components/images/Competition_logos/2019_DESTINATION DEEP SPACE/Vertical/DESTINATION_DEEP_SPACE_Logo_Vertical_RGB_FullColor.jpg"
+            min_width="224px" width="100%">
+        </template>
+        <template v-slot:desc>
+          Description
+        </template>
+        <template v-slot:date>DESTINATION: DEEP SPACE<sup>SM</sup> - 2019</template>
       </RobotCardComponent>
     </div>
   </main>

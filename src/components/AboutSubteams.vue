@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="subteamExplanation">
                     <ul>
-                        <li>Build and maintain relations with brans to have sponsors</li>
+                        <li>Build and maintain relations with brands to have sponsors</li>
                         <li>Prepare marketing campaings</li>
-                        <li>Manage the team's finances and communacations with the school</li>
+                        <li>Manage the team's finances and communications with the school</li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="subteamExplanation">
                     <ul>
-                        <li>Use SND's ideas to recreate precisely the macanisms in CAD</li>
+                        <li>Use SND's ideas to recreate precisely the mecanisms in CAD</li>
                         <li>Create models for the robot and other smaller parts</li>
                         <li>Use 3D software such as Onshape</li>
                         <li>Plan out the precise materials and screws that will be used by construction</li>
