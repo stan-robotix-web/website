@@ -2,8 +2,7 @@
 import MemberCardComponent from './MemberCardComponent.vue';
 
 const captains = [
-    { link: "/TeamMembers_images/Nina_Picture.jpg", name: "Nina", title: "Team Captain"},
-    { link: "/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Dev Lead & Co-Captain"}
+    { link: "/TeamMembers_images/Timothee_Picture.jpg", name: "Timothée", title: "Team Captain"}
 ];
 
 const members = [

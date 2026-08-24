@@ -11,7 +11,7 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
     <h2>Become a part of the Team</h2>
     <h3>Are you a <a href="#student">student</a> or an <a href="#adult">adult</a> looking to join?</h3>
     <div class="member band" id="about">
-      <h3><a><span>What's </span>Robotix ?</a>
+      <h3><a><span>What's </span>Robotix?</a>
       </h3>
       <p>Stan Robotix is organized into several <a href="/about/#subteams"><span>subteams</span></a>, each with its own captain and members,  
 even though a member can obviously be part of multiple <a href="/about/#subteams"><span>subteams</span></a> at the same time!  
@@ -28,11 +28,11 @@ Here is the typical weekly schedule, depending on the subteam you're in: <br>
     </div><div class="member band" id="student">
       <h3><a href="https://monportail.stanislas.qc.ca/Pednet/login.asp" target="COBA">Join <span>as a</span> student</a>
       </h3>
-      <p>The project is open to all those who are interested, no prerequisites! You can come visit us at any time so
-        that you're able to know if you're interested and then join later. </br>
+      <p>The project is open to all those who are interested, no prerequisites! You can come visit us at any time to
+        see if you're interested and then join later. </br>
         For the registration, go on the "<a href="https://monportail.stanislas.qc.ca/Pednet/login.asp"
           target="COBA">COBA</a>" platform in the parent's portal and navigate to the SVE's online inscriptions. Then
-        go into cultural activities and register to "StanRobotix".</p>
+        go into cultural activities and register for "StanRobotix".</p>
     </div>
     <div class="mentor band" id="adult">
       <h3><a href="https://robotiquefirstquebec.org/communaute/coach-mentor/" target="mentorat">Join <span>as an</span>
