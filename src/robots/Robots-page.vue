@@ -46,6 +46,12 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           src="../components/images/Competition_logos/2019_DESTINATION DEEP SPACE/Horizontal/DESTINATION_DEEP_SPACE_Logo_Horizontal_RGB_FullColor.svg"
           class="logo" min-width="378px">
       </a>
+      <a href="#first_power_up_2018" class="2018_logo_horizontal">
+        <h2>2018</h2>
+        <img
+          src="../components/images/Competition_logos/2018_FIRST POWER UP/Horizontal/2018_FIRST_Power_Up_game_logo_OneLine.svg"
+          class="logo" width="350px">
+      </a>
     </nav>
 
 
@@ -142,6 +148,17 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
           Description
         </template>
         <template v-slot:date>DESTINATION: DEEP SPACE<sup>SM</sup> - 2019</template>
+      </RobotCardComponent>
+      <RobotCardComponent side="right" year="first_power_up_2018">
+        <template v-slot:logo>
+          <img
+            src="../components/images/Competition_logos/2018_FIRST POWER UP/Vertical/FIRST_POWER_UP_Logo_Vertical_RGB_FullColor.jpg"
+            min_width="224px" width="100%">
+        </template>
+        <template v-slot:desc>
+          Description
+        </template>
+        <template v-slot:date>FIRST POWER UP<sup>SM</sup> - 2018</template>
       </RobotCardComponent>
     </div>
   </main>
