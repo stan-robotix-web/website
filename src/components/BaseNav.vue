@@ -71,8 +71,7 @@ nav {
     display: flex;
     gap: 10px;
 
-    a,
-    p {
+    a, p {
       margin: 0;
       text-decoration: none;
       color: inherit;
