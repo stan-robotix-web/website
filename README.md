@@ -20,7 +20,7 @@ npm run dev
 npm run serve
 ```
 
-### Compiles and minifies for production and shows that built as it would be once deployed
+### Compiles and minifies for production and shows that build as it would be once deployed
 
 ```
 npm run build | npm run serve dist
