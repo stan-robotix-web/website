@@ -43,8 +43,8 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
       </p>
     </div>
     <div class="band" id="mentor">
-      <h3><a href="https://robotiquefirstquebec.org/communaute/coach-mentor/" target="mentorat">Join <span>as an</span>
-          adult</a></h3>
+      <h3><a href="https://robotiquefirstquebec.org/communaute/coach-mentor/" target="mentorat">Join <span>as a</span>
+          mentor</a></h3>
       <p>
         Anyone over 18 years old is invited to join, no matter if you have previous experience with robotics or
         Stanislas. Here if a guide that explains what it means to be a FIRST mentor and how to become one: <a href="https://robotiquefirstquebec.org/communaute/coach-mentor/"
