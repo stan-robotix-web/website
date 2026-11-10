@@ -1,8 +1,9 @@
 <script setup>
-import BaseHeader from '../../src/components/BaseHeader.vue'
-import BaseFooter from '../../src/components/BaseFooter.vue'
+import BaseHeader from '../../src/components/BaseHeader.vue';
+import BaseFooter from '../../src/components/BaseFooter.vue';
 import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
 </script>
+
 <template>
 
   <BaseHeader />
@@ -107,7 +108,9 @@ import RobotCardComponent from '../../src/components/RobotCardComponent.vue';
       </RobotCardComponent>
     </div>
   </main>
+
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">

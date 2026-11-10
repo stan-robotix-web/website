@@ -49,6 +49,7 @@ Here is the typical weekly schedule, depending on the subteam you're in: <br>
   </main>
 
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">

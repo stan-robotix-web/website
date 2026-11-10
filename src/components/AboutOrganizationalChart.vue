@@ -22,27 +22,29 @@ const mentors = [
 </script>
 
 <template>
-    <!-- image de l'organisation de StanRobotix?-->
-    <h2 id="captains">Team Captains</h2>
-    <div class="category">
-        <member-card-component v-for="member in captains" :link="member.link">
-            <template v-slot:name>{{ member.name }}</template>
-            <template v-slot:title>{{ member.title }}</template>
-        </member-card-component>
-    </div>
-    <h2 id="members">Team Members</h2>
-    <div class="category">
-        <member-card-component v-for="member in members" :link="member.link">
-            <template v-slot:name>{{ member.name }}</template>
-            <template v-slot:title>{{ member.title }}</template>
-        </member-card-component>
-    </div>
-    <h2 id="mentors">Team Mentors</h2>
-    <div class="category">
-        <member-card-component v-for="member in mentors" :link="member.link">
-            <template v-slot:name>{{ member.name }}</template>
-            <template v-slot:title>{{ member.title }}</template>
-        </member-card-component>
+    <div>
+        <!-- image de l'organisation de StanRobotix?-->
+        <h2 id="captains">Team Captains</h2>
+        <div class="category">
+            <member-card-component v-for="member in captains" :link="member.link" v-bind:value="member.name" :key="member.name">
+                <template v-slot:name>{{ member.name }}</template>
+                <template v-slot:title>{{ member.title }}</template>
+            </member-card-component>
+        </div>
+        <h2 id="members">Team Members</h2>
+        <div class="category">
+            <member-card-component v-for="member in members" :link="member.link" v-bind:value="member.name" :key="member.name">
+                <template v-slot:name>{{ member.name }}</template>
+                <template v-slot:title>{{ member.title }}</template>
+            </member-card-component>
+        </div>
+        <h2 id="mentors">Team Mentors</h2>
+        <div class="category">
+            <member-card-component v-for="member in mentors" :link="member.link" v-bind:value="member.name" :key="member.name">
+                <template v-slot:name>{{ member.name }}</template>
+                <template v-slot:title>{{ member.title }}</template>
+            </member-card-component>
+        </div>
     </div>
 </template>
 
