@@ -1,5 +1,5 @@
 <script setup>
-import {isActive, getBasePath} from "../javascript/DetectActivePage.js";
+import {isActive} from "../javascript/DetectActivePage.js";
 </script>
 <script>
 export default {

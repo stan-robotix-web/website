@@ -1,6 +1,6 @@
 <script setup>
 import SponsorsLogos from "./SponsorsLogos.vue";
-import {isActive, getBasePath} from "../javascript/DetectActivePage.js";
+import {isActive} from "../javascript/DetectActivePage.js";
 </script>
 
 <template>
