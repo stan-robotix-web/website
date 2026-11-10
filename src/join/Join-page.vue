@@ -24,6 +24,18 @@ Here is the typical weekly schedule, depending on the subteam you're in: <br>
 <div>Programming Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li>  
 <div>Design Team:</div>  <li>Wednesday and Friday from 5:30 PM to 7:30 PM.</li> -->
       </p>
+      <table class="schedule">
+        <thead><tr><th class="subteam-name">Subteam</th><th class="subteam-time">Time of meeting(s)</th></tr></thead>
+        <tbody>
+          <tr><td class="subteam-name">Build Team:</td><td class="subteam-time">Thursday and Friday from 5:30 PM to 7:30 PM.</td></tr>
+          <tr><td class="subteam-name">Media Team:</td><td class="subteam-time">Friday from 5:30 PM to 7:30 PM.</td></tr>
+          <tr><td class="subteam-name">Marketing Team:</td><td class="subteam-time">Friday from 5:30 PM to 7:30 PM.</td></tr>
+          <tr><td class="subteam-name">Finance Team:</td><td class="subteam-time">Thursday from 5:30 PM to 7:30 PM.</td></tr>
+          <tr><td class="subteam-name">Programming Team:</td><td class="subteam-time">Tuesday and Friday from 5:30 PM to 7:30 PM.</td></tr>
+          <tr><td class="subteam-name">Design Team:</td><td class="subteam-time">Wednesday and Friday from 5:30 PM to 7:30 PM.</td></tr>
+        </tbody>
+      </table>
+      <p>This is subject to change from year to year depending on mentor availability and student attendance.</p>
        
     </div><div class="member band" id="student">
       <h3><a href="https://monportail.stanislas.qc.ca/Pednet/login.asp" target="COBA">Join <span>as a</span> student</a>
@@ -112,6 +124,18 @@ h3 {
   }
   a span {
     color: base.$blue;
+  }
+}
+
+table, td, th {
+  border: base.$secondary solid 2px;
+}
+
+table {
+  margin: auto;
+
+  td, th {
+    padding: 4px;
   }
 }
 </style>
