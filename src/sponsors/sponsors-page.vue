@@ -5,7 +5,9 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
 </script>
 
 <template>
+
   <BaseHeader />
+
   <main>
     <h1>Sponsors</h1>
     <h3>Our Sponsors</h3>
@@ -55,7 +57,9 @@ import SponsorsLogos from "../../src/components/SponsorsLogos.vue";
       </a>
     </section>
   </main>
+
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">

@@ -1,6 +1,6 @@
 <script setup>
-import BaseHeader from '../../src/components/BaseHeader.vue'
-import BaseFooter from '../../src/components/BaseFooter.vue'
+import BaseHeader from '../../src/components/BaseHeader.vue';
+import BaseFooter from '../../src/components/BaseFooter.vue';
 import ProjectCard from "../../src/components/ProjectsCard.vue";
 
 </script>
@@ -78,6 +78,7 @@ import ProjectCard from "../../src/components/ProjectsCard.vue";
   </main>
 
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">
