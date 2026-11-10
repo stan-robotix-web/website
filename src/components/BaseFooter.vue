@@ -1,29 +1,6 @@
 <script setup>
 import SponsorsLogos from "./SponsorsLogos.vue";
-</script>
-<script>
-export default {
-  // FONCTIONS JAVASCRIPT QUI PERMETTENT DE DÉTECTER SI ON EST SUR UNE CERTAINE PAGE
-  // but : highlight le bouton de la page sur lequel on se trouve
-  methods: {
-    getBasePath() {
-      const pathArray = window.location.pathname.split("/");
-      
-      // Supposons que le chemin de base soit le nom du dépôt, ici 'website'
-      return `/${pathArray[1]}`;
-    },
-    isActive(path) {
-      const basePath = this.getBasePath();
-      const currentPath = window.location.pathname;
-
-      // Vérifiez si le chemin est la racine et que le path spécifié est '/home.html'
-      if (currentPath === `${basePath}` && path === "/home.html") {
-        return true;
-      }
-      return currentPath === `${path}`;
-    },
-  },
-};
+import {isActive} from "../javascript/DetectActivePage.js";
 </script>
 
 <template>
@@ -62,21 +39,9 @@ export default {
               </a>
             </ul>
           </li>
-          <li>
-            <a :class="{ active: isActive('/robots/') }" href="/robots/"
-              >Robots</a
-            >
-          </li>
-          <li>
-            <a :class="{ active: isActive('/outreach/') }" href="/outreach/"
-              >Outreach</a
-            >
-          </li>
-          <li>
-            <a :class="{ active: isActive('/sponsors/') }" href="/sponsors/"
-              >Sponsors</a
-            >
-          </li>
+          <li><a :class="{ active: isActive('/robots/') }" href="/robots/">Robots</a></li>
+          <li><a :class="{ active: isActive('/outreach/') }" href="/outreach/">Outreach</a></li>
+          <li><a :class="{ active: isActive('/sponsors/') }" href="/sponsors/">Sponsors</a></li>
         </ul>
       </nav>
 
@@ -251,22 +216,17 @@ footer {
         left: 0;
         display: block;
 
-        a:hover {
-          background-color: rgba(base.$secondary, $alpha: 0.2);
-        }
-
         li {
           color: base.$secondary;
           font-weight: 300;
           margin-left: 0px;
           clear: both;
-          width: 90%;
+          width: 100%;
         }
       }
     }
 
-    a,
-    p {
+    a, p {
       margin: 0;
       text-decoration: none;
       color: inherit;
@@ -283,13 +243,17 @@ footer {
       z-index: 2;
     }
 
+    i {
+      margin-left: 1.5px;
+    }
+
     a:hover {
       transition: all 0.5s ease;
       background-color: rgba(base.$secondary, $alpha: 0.2);
       outline: 1px solid base.$secondary;
     }
 
-    a.active, a.active>li{
+    a.active, a.active>li {
       color: white;
       background-color: base.$secondary;
     }

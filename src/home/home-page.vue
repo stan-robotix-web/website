@@ -7,6 +7,7 @@ import HomeInstaFeed from "../components/HomeInsta.vue";
 </script>
 
 <template>
+
   <BaseHeader />
 
   <main>
@@ -22,7 +23,9 @@ import HomeInstaFeed from "../components/HomeInsta.vue";
     <HomePhoto />
     <HomeInstaFeed />
   </main>
+
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">

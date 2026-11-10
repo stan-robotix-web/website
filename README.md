@@ -20,10 +20,10 @@ npm run dev
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production and shows that build as it would be once deployed
 
 ```
-npm run build
+npm run build | npm run serve dist
 ```
 
 ### To deploy to Github Pages
@@ -63,6 +63,3 @@ To add a component :
 2. You can now add this component to a page by using `import ComponentName from '../../src/components/ComponentName.vue'` in the `<script setup>`, and using it with the `<ComponentName/>` tag inside the html.
 
 If needed, you can see an example in the commit `main home page component add`
-
-
-

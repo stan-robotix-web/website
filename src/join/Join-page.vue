@@ -57,6 +57,7 @@ import BaseFooter from '../../src/components/BaseFooter.vue'
   </main>
 
   <BaseFooter />
+
 </template>
 
 <style scoped lang="scss">
