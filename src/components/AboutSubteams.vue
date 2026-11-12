@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul>
                         <li>Build and maintain relations with brans to have sponsors</li>
                         <li>Prepare marketing campaings</li>
-                        <li>Manage the team's finances and communacations with the school</li>
+                        <li>Manage the team's finances and communications with the school</li>
                     </ul>
                 </div>
             </div>
