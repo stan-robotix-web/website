@@ -14,16 +14,16 @@ npm install
 npm run dev
 ```
 
+### Compiles and minifies for production
+
+```sh
+npm run build
+```
+
 ### Show the latest build in a localhost
 
 ```sh
-npm run serve
-```
-
-### Compiles and minifies for production and shows that build as it would be once deployed
-
-```sh
-npm run build | npm run serve dist
+npm run preview
 ```
 
 ### To deploy to Github Pages
