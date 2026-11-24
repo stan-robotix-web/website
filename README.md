@@ -4,31 +4,31 @@ VueJS project using Vite for deployment and preview.
 
 ## Project setup
 
-```
+```sh
 npm install
 ```
 
 ### Compiles and hot-reloads for development
 
-```
+```sh
 npm run dev
 ```
 
 ### Show the latest build in a localhost
 
-```
+```sh
 npm run serve
 ```
 
 ### Compiles and minifies for production and shows that build as it would be once deployed
 
-```
+```sh
 npm run build | npm run serve dist
 ```
 
 ### To deploy to Github Pages
 
-```
+```sh
 npm run deploy
 ```
 
@@ -49,7 +49,7 @@ To add a component :
 
 1. create a `ComponentName.vue` inside `./src/components/`.
    - put and complete this inside :
-    ```
+    ```vue
     <script setup></script>
 
     <template>
